@@ -52,7 +52,7 @@ The primary target users of the Canadian Parliament Bills Tracker are normal Can
 
 ### Mockups
 
-![mockup](polis__mockup-1.webp)
+![mockup](./public/polis__mockup-1.webp)
 
 ### Data
 
