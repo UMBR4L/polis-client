@@ -1,28 +1,30 @@
 # Sprint-1
 
-## Create a new project repository on GitHub
+## Set-Up Development Environment
 
-- [ ] Create a new repository on your GitHub account.
-- [ ] Choose a meaningful name for your project.
-- [ ] Add a brief description of your project.
-- [ ] Configure the repository as public or private, depending on your preferences.
+### Create a new project repository on GitHub
 
-## Configure your IDE
+- [x] Create a new repository on your GitHub account.
+- [x] Choose a meaningful name for your project.
+- [x] Add a brief description of your project.
+- [x] Configure the repository as public or private, depending on your preferences.
 
-- [ ] Install and set up the Integrated Development Environment (IDE) of your choice for JavaScript/Node.js development. Popular options include Visual Studio Code, WebStorm, or others.
-- [ ] Configure any extensions or plugins that will enhance your development experience.
+### Configure your IDE
 
-## Set up version control
+- [x] Install and set up the Integrated Development Environment (IDE) of your choice for JavaScript/Node.js development. Popular options include Visual Studio Code, WebStorm, or others.
+- [x] Configure any extensions or plugins that will enhance your development experience.
 
-- [ ] Initialize Git in your project folder if it's not already initialized.
-- [ ] Create a .gitignore file to specify which files and directories should be excluded from version control. Common entries include node_modules, build files, and IDE-specific files.
-- [ ] Make your initial commit to Git with the necessary project files.
+### Set up version control
 
-## Project structure
+- [x] Initialize Git in your project folder if it's not already initialized.
+- [x] Create a .gitignore file to specify which files and directories should be excluded from version control. Common entries include node_modules, build files, and IDE-specific files.
+- [x] Make your initial commit to Git with the necessary project files.
 
-- [ ] Organize your project directory structure. Common directories include "src" for source code, "public" for static assets, and "docs" for documentation.
-- [ ] Create any necessary configuration files, such as package.json for Node.js project dependencies.
+### Project structure
 
-## Install node_modules
+- [x] Organize your project directory structure. Common directories include "src" for source code, "public" for static assets, and "docs" for documentation.
+- [x] Create any necessary configuration files, such as package.json for Node.js project dependencies.
 
-- [ ] Once your project repository is set up, and you have a basic project structure in place, you can install node_modules by running `npm install` or `yarn install`. This step is typically done after your project's initial setup.
+### Install node_modules
+
+- [x] Once your project repository is set up, and you have a basic project structure in place, you can install node_modules by running `npm install` or `yarn install`. This step is typically done after your project's initial setup.
