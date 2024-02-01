@@ -52,7 +52,7 @@ User Needs: Users seek easily digestible information about bills to stay informe
 
 ### Mockups
 
-![mockup](./public/polis__mockup-2.webp)
+![mockup](./public/polis__mockup-2.jpg)
 
 ### Data
 
