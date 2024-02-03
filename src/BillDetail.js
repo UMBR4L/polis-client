@@ -1,31 +1,40 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
+const BillDetail = ({ bills }) => {
+  const { billId } = useParams();
+  const [billData, setBillData] = useState(null);
 
-const PARLIAMENT_API_BASE = "https://api.openparliament.ca"
-
-const BillDetail = ({ data }) => {
-  const [bill, setBill] = useState([]);
-
+  // Use useEffect to fetch the bill data when the component mounts
   useEffect(() => {
-    // Fetch the bills data from the local JSON file
-    fetch(`${PARLIAMENT_API_BASE}${data.url}`)
-      .then(response => response.json())
-      .then(data => setBill(data)) // Assuming the list is under 'objects' key
-      .catch(error => console.error("Failed to load bills data:", error));
-  }, []);
-    
+    const selectedBill = bills.find((bill) => bill.number === billId);
+    if (selectedBill) {
+      setBillData(selectedBill);
+    } else {
+      setBillData(null);
+    }
+  }, [billId, bills]);
+
+  
+  // Render the bill details
   return (
-    <div className="bill-detail">
-      <h2>{bill.name.en}</h2>
-      <p>Status: {bill.status.en}</p>
-      <p>Number: {bill.number}</p>
-      <p>Session: {bill.session}</p>
-      <p>Introduced: {bill.introduced}</p>
-      <p>Private Member Bill: {bill.private_member_bill ? 'Yes' : 'No'}</p>
-      <p>Law: {bill.law ? 'Yes' : 'No'}</p>
-      <a href={bill.text_url} target="_blank" rel="noopener noreferrer">Bill Text</a>
-      <br/>
-      <a href={bill.legisinfo_url} target="_blank" rel="noopener noreferrer">More Info</a>
+      <div className="bill-detail">
+        { console.log(billData) }
+      {billData ? (
+        <>
+          <h2>{billData.name.en}</h2>
+          <p>Number: {billData.number}</p>
+          <p>Session: {billData.session}</p>
+          <p>Introduced: {billData.introduced}</p>
+          <p>Private Member Bill: {billData.private_member_bill ? 'Yes' : 'No'}</p>
+          <p>Law: {billData.law ? 'Yes' : 'No'}</p>
+          <a href={billData.text_url} target="_blank" rel="noopener noreferrer">Bill Text</a>
+          <br />
+          <a href={billData.legisinfo_url} target="_blank" rel="noopener noreferrer">More Info</a>
+        </>
+      ) : (
+        <p>Bill not found.</p>
+      )}
       <style jsx>{`
         .bill-detail {
           font-family: Arial, sans-serif;
