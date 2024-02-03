@@ -1,0 +1,120 @@
+{
+    "pagination": {
+      "next_url": "/bills/?introduced__gt=2020-01-01&offset=10&limit=10&format=json",
+      "limit": 10,
+      "previous_url": null,
+      "offset": 0
+    },
+    "objects": [
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi constitutionnelle de 1867 (représentation électorale)",
+          "en": "An Act to amend the Constitution Act, 1867 (electoral representation)"
+        },
+        "url": "/bills/44-1/C-14/",
+        "number": "C-14",
+        "session": "44-1",
+        "introduced": "2022-03-24",
+        "legisinfo_id": 11644886
+      },
+      {
+        "name": {
+          "fr": "Loi portant octroi à Sa Majesté de crédits pour l'administration publique fédérale pendant l'exercice se terminant le 31 mars 2022",
+          "en": "An Act for granting to Her Majesty certain sums of money for the federal public administration for the fiscal year ending March 31, 2022"
+        },
+        "url": "/bills/44-1/C-15/",
+        "number": "C-15",
+        "session": "44-1",
+        "introduced": "2022-03-24",
+        "legisinfo_id": 11650420
+      },
+      {
+        "name": {
+          "fr": "Loi portant octroi à Sa Majesté de crédits pour l'administration publique fédérale pendant l'exercice se terminant le 31 mars 2023",
+          "en": "An Act for granting to Her Majesty certain sums of money for the federal public administration for the fiscal year ending March 31, 2023"
+        },
+        "url": "/bills/44-1/C-16/",
+        "number": "C-16",
+        "session": "44-1",
+        "introduced": "2022-03-24",
+        "legisinfo_id": 11650525
+      },
+      {
+        "name": {
+          "fr": "Loi visant à réduire la pauvreté et à renforcer la sécurité financière des personnes handicapées par l'établissement de la prestation canadienne pour les personnes handicapées et apportant une modification corrélative à la Loi de l'impôt sur le revenu",
+          "en": "An Act to reduce poverty and to support the financial security of persons with disabilities by establishing the Canada disability benefit and making a consequential amendment to the Income Tax Act"
+        },
+        "url": "/bills/44-1/C-22/",
+        "number": "C-22",
+        "session": "44-1",
+        "introduced": "2022-06-02",
+        "legisinfo_id": 11826019
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur la citoyenneté (Serment de citoyenneté)",
+          "en": "An Act to amend the Citizenship Act (Oath of Citizenship)"
+        },
+        "url": "/bills/44-1/S-262/",
+        "number": "S-262",
+        "session": "44-1",
+        "introduced": "2023-05-09",
+        "legisinfo_id": 12411747
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur les douanes et la Loi sur le précontrôle (2016)",
+          "en": "An Act to amend the Customs Act and the Preclearance Act, 2016"
+        },
+        "url": "/bills/44-1/S-7/",
+        "number": "S-7",
+        "session": "44-1",
+        "introduced": "2022-03-31",
+        "legisinfo_id": 11675555
+      },
+      {
+        "name": {
+          "fr": "Loi concernant la modernisation de la réglementation",
+          "en": "An Act respecting regulatory modernization"
+        },
+        "url": "/bills/44-1/S-6/",
+        "number": "S-6",
+        "session": "44-1",
+        "introduced": "2022-03-31",
+        "legisinfo_id": 11675482
+      },
+      {
+        "name": {
+          "fr": "Loi concernant un cadre fédéral relatif au trouble du spectre de l’autisme",
+          "en": "An Act respecting a federal framework on autism spectrum disorder"
+        },
+        "url": "/bills/44-1/S-203/",
+        "number": "S-203",
+        "session": "44-1",
+        "introduced": "2021-11-24",
+        "legisinfo_id": 11474384
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur le système correctionnel et la mise en liberté sous condition (examen des dossiers de libération conditionnelle)",
+          "en": "An Act to amend the Corrections and Conditional Act (parole review)"
+        },
+        "url": "/bills/44-1/S-281/",
+        "number": "S-281",
+        "session": "44-1",
+        "introduced": "2023-11-08",
+        "legisinfo_id": 12698030
+      },
+      {
+        "name": {
+          "fr": "Loi instituant la Journée internationale de la langue maternelle",
+          "en": "An Act to establish International Mother Language Day"
+        },
+        "url": "/bills/44-1/S-214/",
+        "number": "S-214",
+        "session": "44-1",
+        "introduced": "2021-11-24",
+        "legisinfo_id": 11474525
+      }
+    ]
+  }

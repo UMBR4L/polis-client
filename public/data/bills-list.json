@@ -1,0 +1,1110 @@
+{
+    "pagination": {
+      "next_url": "/bills/?introduced__gt=2020-01-01&offset=100&limit=100&format=json",
+      "limit": 100,
+      "previous_url": null,
+      "offset": 0
+    },
+    "objects": [
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi constitutionnelle de 1867 (représentation électorale)",
+          "en": "An Act to amend the Constitution Act, 1867 (electoral representation)"
+        },
+        "url": "/bills/44-1/C-14/",
+        "number": "C-14",
+        "session": "44-1",
+        "introduced": "2022-03-24",
+        "legisinfo_id": 11644886
+      },
+      {
+        "name": {
+          "fr": "Loi portant octroi à Sa Majesté de crédits pour l'administration publique fédérale pendant l'exercice se terminant le 31 mars 2022",
+          "en": "An Act for granting to Her Majesty certain sums of money for the federal public administration for the fiscal year ending March 31, 2022"
+        },
+        "url": "/bills/44-1/C-15/",
+        "number": "C-15",
+        "session": "44-1",
+        "introduced": "2022-03-24",
+        "legisinfo_id": 11650420
+      },
+      {
+        "name": {
+          "fr": "Loi portant octroi à Sa Majesté de crédits pour l'administration publique fédérale pendant l'exercice se terminant le 31 mars 2023",
+          "en": "An Act for granting to Her Majesty certain sums of money for the federal public administration for the fiscal year ending March 31, 2023"
+        },
+        "url": "/bills/44-1/C-16/",
+        "number": "C-16",
+        "session": "44-1",
+        "introduced": "2022-03-24",
+        "legisinfo_id": 11650525
+      },
+      {
+        "name": {
+          "fr": "Loi visant à réduire la pauvreté et à renforcer la sécurité financière des personnes handicapées par l'établissement de la prestation canadienne pour les personnes handicapées et apportant une modification corrélative à la Loi de l'impôt sur le revenu",
+          "en": "An Act to reduce poverty and to support the financial security of persons with disabilities by establishing the Canada disability benefit and making a consequential amendment to the Income Tax Act"
+        },
+        "url": "/bills/44-1/C-22/",
+        "number": "C-22",
+        "session": "44-1",
+        "introduced": "2022-06-02",
+        "legisinfo_id": 11826019
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur la citoyenneté (Serment de citoyenneté)",
+          "en": "An Act to amend the Citizenship Act (Oath of Citizenship)"
+        },
+        "url": "/bills/44-1/S-262/",
+        "number": "S-262",
+        "session": "44-1",
+        "introduced": "2023-05-09",
+        "legisinfo_id": 12411747
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur les douanes et la Loi sur le précontrôle (2016)",
+          "en": "An Act to amend the Customs Act and the Preclearance Act, 2016"
+        },
+        "url": "/bills/44-1/S-7/",
+        "number": "S-7",
+        "session": "44-1",
+        "introduced": "2022-03-31",
+        "legisinfo_id": 11675555
+      },
+      {
+        "name": {
+          "fr": "Loi concernant la modernisation de la réglementation",
+          "en": "An Act respecting regulatory modernization"
+        },
+        "url": "/bills/44-1/S-6/",
+        "number": "S-6",
+        "session": "44-1",
+        "introduced": "2022-03-31",
+        "legisinfo_id": 11675482
+      },
+      {
+        "name": {
+          "fr": "Loi concernant un cadre fédéral relatif au trouble du spectre de l’autisme",
+          "en": "An Act respecting a federal framework on autism spectrum disorder"
+        },
+        "url": "/bills/44-1/S-203/",
+        "number": "S-203",
+        "session": "44-1",
+        "introduced": "2021-11-24",
+        "legisinfo_id": 11474384
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur le système correctionnel et la mise en liberté sous condition (examen des dossiers de libération conditionnelle)",
+          "en": "An Act to amend the Corrections and Conditional Act (parole review)"
+        },
+        "url": "/bills/44-1/S-281/",
+        "number": "S-281",
+        "session": "44-1",
+        "introduced": "2023-11-08",
+        "legisinfo_id": 12698030
+      },
+      {
+        "name": {
+          "fr": "Loi instituant la Journée internationale de la langue maternelle",
+          "en": "An Act to establish International Mother Language Day"
+        },
+        "url": "/bills/44-1/S-214/",
+        "number": "S-214",
+        "session": "44-1",
+        "introduced": "2021-11-24",
+        "legisinfo_id": 11474525
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi de l’impôt sur le revenu (utilisation des ressources d’un organisme de bienfaisance enregistré)",
+          "en": "An Act to amend the Income Tax Act (use of resources of a registered charity)"
+        },
+        "url": "/bills/44-1/S-216/",
+        "number": "S-216",
+        "session": "44-1",
+        "introduced": "2021-11-24",
+        "legisinfo_id": 11474534
+      },
+      {
+        "name": {
+          "fr": "Loi sur la réaffectation de certains biens saisis, bloqués ou mis sous séquestre",
+          "en": "An Act respecting the repurposing of certain seized, frozen or sequestrated assets"
+        },
+        "url": "/bills/44-1/S-217/",
+        "number": "S-217",
+        "session": "44-1",
+        "introduced": "2021-11-24",
+        "legisinfo_id": 11474562
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant le Code criminel (matériel pornographique)",
+          "en": "An Act to amend the Criminal Code (pornographic material)"
+        },
+        "url": "/bills/44-1/C-270/",
+        "number": "C-270",
+        "session": "44-1",
+        "introduced": "2022-04-28",
+        "legisinfo_id": 11714011
+      },
+      {
+        "name": {
+          "fr": "Loi visant à interdire l’exportation par voie aérienne de chevaux destinés à l’abattage et apportant des modifications connexes à certaines lois",
+          "en": "An Act to prohibit the export by air of horses for slaughter and to make related amendments to certain Acts"
+        },
+        "url": "/bills/44-1/C-355/",
+        "number": "C-355",
+        "session": "44-1",
+        "introduced": "2023-09-19",
+        "legisinfo_id": 12566934
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur l’assurance-emploi et le Règlement sur l’assurance-emploi (Île-du-Prince-Édouard)",
+          "en": "An Act to amend the Employment Insurance Act and the Employment Insurance Regulations (Prince Edward Island)"
+        },
+        "url": "/bills/44-1/S-236/",
+        "number": "S-236",
+        "session": "44-1",
+        "introduced": "2022-02-21",
+        "legisinfo_id": 11596147
+      },
+      {
+        "name": {
+          "fr": "Loi prévoyant l'élaboration d'une stratégie nationale sur la prévision des inondations et des sécheresses",
+          "en": "An Act to establish a national strategy respecting flood and drought forecasting"
+        },
+        "url": "/bills/44-1/C-317/",
+        "number": "C-317",
+        "session": "44-1",
+        "introduced": "2023-03-08",
+        "legisinfo_id": 12258970
+      },
+      {
+        "name": {
+          "fr": "Loi abrogeant l’article 43 du Code criminel (appel à l’action numéro 6 de la Commission de vérité et réconciliation du Canada)",
+          "en": "An Act to repeal section 43 of the Criminal Code (Truth and Reconciliation Commission of Canada's call to action number 6)"
+        },
+        "url": "/bills/44-1/S-251/",
+        "number": "S-251",
+        "session": "44-1",
+        "introduced": "2022-06-16",
+        "legisinfo_id": 11884061
+      },
+      {
+        "name": {
+          "fr": "Loi désignant le mois de mars comme Mois du patrimoine hellénique",
+          "en": "An Act to designate the month of March as Hellenic Heritage Month"
+        },
+        "url": "/bills/44-1/S-259/",
+        "number": "S-259",
+        "session": "44-1",
+        "introduced": "2023-03-29",
+        "legisinfo_id": 12317532
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant le Code criminel et la Charte canadienne des droits des victimes (renseignements concernant la victime)",
+          "en": "An Act to amend the Criminal Code and the Canadian Victims Bill of Rights (information about the victim)"
+        },
+        "url": "/bills/44-1/S-238/",
+        "number": "S-238",
+        "session": "44-1",
+        "introduced": "2022-02-24",
+        "legisinfo_id": 11603023
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant  la Loi sur la justice pour les victimes de dirigeants étrangers corrompus (loi de Sergueï Magnitski)",
+          "en": "An Act to amend the Justice for Victims of Corrupt Foreign Officials Act (Sergei Magnitsky Law)"
+        },
+        "url": "/bills/44-1/S-247/",
+        "number": "S-247",
+        "session": "44-1",
+        "introduced": "2022-05-31",
+        "legisinfo_id": 11825268
+      },
+      {
+        "name": {
+          "fr": "Loi édictant la Loi sur l’ombudsman fédéral des victimes d’actes criminels, modifiant la Charte canadienne des droits des victimes et établissant un cadre de mise en œuvre des\r\ndroits des victimes d’actes criminels",
+          "en": "An Act to enact the Federal Ombudsperson for Victims of Crime Act, to amend the Canadian Victims Bill of Rights and to establish a framework for implementing the rights of victims of crime"
+        },
+        "url": "/bills/44-1/S-265/",
+        "number": "S-265",
+        "session": "44-1",
+        "introduced": "2023-05-17",
+        "legisinfo_id": 12444416
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur la taxe d'accise et la Loi sur la concurrence",
+          "en": "An Act to amend the Excise Tax Act and the Competition Act"
+        },
+        "url": "/bills/44-1/C-56/",
+        "number": "C-56",
+        "session": "44-1",
+        "introduced": "2023-09-21",
+        "legisinfo_id": 12569206
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur le Service canadien du renseignement de sécurité (obligation de franchise)",
+          "en": "An Act to amend the Canadian Security Intelligence Service Act (duty of candour)"
+        },
+        "url": "/bills/44-1/C-331/",
+        "number": "C-331",
+        "session": "44-1",
+        "introduced": "2023-05-02",
+        "legisinfo_id": 12362015
+      },
+      {
+        "name": {
+          "fr": "Loi constituant le Commissariat à l’enfance et à l’adolescence du Canada",
+          "en": "An Act to establish the Office of the Commissioner for Children and Young Persons in Canada"
+        },
+        "url": "/bills/43-1/S-217/",
+        "number": "S-217",
+        "session": "43-1",
+        "introduced": "2020-06-16",
+        "legisinfo_id": 10803478
+      },
+      {
+        "name": {
+          "fr": "Loi portant octroi à Sa Majesté de crédits pour l'administration publique fédérale pendant l'exercice se terminant le 31 mars 2020",
+          "en": "An Act for granting to Her Majesty certain sums of money for the federal public administration for the fiscal year ending March 31, 2020"
+        },
+        "url": "/bills/43-1/C-10/",
+        "number": "C-10",
+        "session": "43-1",
+        "introduced": "2020-03-13",
+        "legisinfo_id": 10687311
+      },
+      {
+        "name": {
+          "fr": "Loi portant octroi à Sa Majesté de crédits pour l'administration publique fédérale pendant l'exercice se terminant le 31 mars 2021",
+          "en": "An Act for granting to Her Majesty certain sums of money for the federal public administration for the fiscal year ending March 31, 2021"
+        },
+        "url": "/bills/43-1/C-11/",
+        "number": "C-11",
+        "session": "43-1",
+        "introduced": "2020-03-13",
+        "legisinfo_id": 10687333
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur la gestion des finances publiques (mandat spécial)",
+          "en": "An Act to amend the Financial Administration Act (special warrant)"
+        },
+        "url": "/bills/43-1/C-12/",
+        "number": "C-12",
+        "session": "43-1",
+        "introduced": "2020-03-13",
+        "legisinfo_id": 10705026
+      },
+      {
+        "name": {
+          "fr": "Loi concernant des mesures supplémentaires liées à la COVID-19",
+          "en": "An Act respecting further COVID-19 measures"
+        },
+        "url": "/bills/43-1/C-20/",
+        "number": "C-20",
+        "session": "43-1",
+        "introduced": "2020-07-20",
+        "legisinfo_id": 10833096
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant le Code criminel et la Loi sur l’identification des criminels et apportant des modifications connexes à d’autres lois (réponse à la COVID-19 et autres mesures)",
+          "en": "An Act to amend the Criminal Code and the Identification of Criminals Act and to make related amendments to other Acts (COVID-19 response and other measures)"
+        },
+        "url": "/bills/44-1/S-4/",
+        "number": "S-4",
+        "session": "44-1",
+        "introduced": "2022-02-08",
+        "legisinfo_id": 11554508
+      },
+      {
+        "name": {
+          "fr": "Loi instituant la Journée canadienne de l’alimentation",
+          "en": "An Act to establish Food Day in Canada"
+        },
+        "url": "/bills/44-1/S-227/",
+        "number": "S-227",
+        "session": "44-1",
+        "introduced": "2021-11-25",
+        "legisinfo_id": 11475760
+      },
+      {
+        "name": {
+          "fr": "Loi concernant la Journée nationale de la jupe à rubans",
+          "en": "An Act respecting a National Ribbon Skirt Day"
+        },
+        "url": "/bills/44-1/S-219/",
+        "number": "S-219",
+        "session": "44-1",
+        "introduced": "2021-11-24",
+        "legisinfo_id": 11474538
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur les compétences linguistiques (gouverneur général)",
+          "en": "An Act to amend the Languages Skills Act (Governor General)"
+        },
+        "url": "/bills/44-1/S-220/",
+        "number": "S-220",
+        "session": "44-1",
+        "introduced": "2021-11-24",
+        "legisinfo_id": 11474604
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur le ministère des Travaux publics et des Services gouvernementaux (utilisation du bois)",
+          "en": "An Act to amend the Department of Public Works and Government Services Act (use of wood)"
+        },
+        "url": "/bills/44-1/S-222/",
+        "number": "S-222",
+        "session": "44-1",
+        "introduced": "2021-11-24",
+        "legisinfo_id": 11474572
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant le Code criminel et la Loi sur l’immigration et la protection des réfugiés (trafic d’organes humains)",
+          "en": "An Act to amend the Criminal Code and the Immigration and Refugee Protection Act (trafficking in human organs)"
+        },
+        "url": "/bills/44-1/S-223/",
+        "number": "S-223",
+        "session": "44-1",
+        "introduced": "2021-11-24",
+        "legisinfo_id": 11474651
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant le Code criminel (traite de personnes)",
+          "en": "An Act to amend the Criminal Code (trafficking in persons)"
+        },
+        "url": "/bills/44-1/S-224/",
+        "number": "S-224",
+        "session": "44-1",
+        "introduced": "2021-11-24",
+        "legisinfo_id": 11474653
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi interdisant les armes à sous-munitions (investissements)",
+          "en": "An Act to amend the Prohibiting Cluster Munitions Act (investments)"
+        },
+        "url": "/bills/44-1/S-225/",
+        "number": "S-225",
+        "session": "44-1",
+        "introduced": "2021-11-24",
+        "legisinfo_id": 11474676
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur la radiocommunication",
+          "en": "An Act to amend the Radiocommunication Act"
+        },
+        "url": "/bills/44-1/S-242/",
+        "number": "S-242",
+        "session": "44-1",
+        "introduced": "2022-03-23",
+        "legisinfo_id": 11647824
+      },
+      {
+        "name": {
+          "fr": "Loi concernant une stratégie nationale pour les enfants et les jeunes au Canada",
+          "en": "An Act respecting a national strategy for children and youth in Canada"
+        },
+        "url": "/bills/44-1/S-282/",
+        "number": "S-282",
+        "session": "44-1",
+        "introduced": "2023-11-21",
+        "legisinfo_id": 12723774
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur la citoyenneté (attribution de la citoyenneté à certains Canadiens)",
+          "en": "An Act to amend the Citizenship Act (granting citizenship to certain Canadians)"
+        },
+        "url": "/bills/44-1/S-245/",
+        "number": "S-245",
+        "session": "44-1",
+        "introduced": "2022-05-12",
+        "legisinfo_id": 11777172
+      },
+      {
+        "name": {
+          "fr": "Loi instituant le Mois du patrimoine libanais",
+          "en": "An Act respecting Lebanese Heritage Month"
+        },
+        "url": "/bills/44-1/S-246/",
+        "number": "S-246",
+        "session": "44-1",
+        "introduced": "2022-05-19",
+        "legisinfo_id": 11800883
+      },
+      {
+        "name": {
+          "fr": "Loi établissant la Commission d'examen et de traitement des plaintes du public et modifiant certaines lois et textes réglementaires",
+          "en": "An Act establishing the Public Complaints and Review Commission and amending certain Acts and statutory instruments"
+        },
+        "url": "/bills/44-1/C-20/",
+        "number": "C-20",
+        "session": "44-1",
+        "introduced": "2022-05-19",
+        "legisinfo_id": 11792856
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur l’assurance-emploi et le Code canadien du travail (parents adoptifs et parents d’intention)",
+          "en": "An Act to amend the Employment Insurance Act and the Canada Labour Code (adoptive and intended parents)"
+        },
+        "url": "/bills/44-1/C-318/",
+        "number": "C-318",
+        "session": "44-1",
+        "introduced": "2023-03-08",
+        "legisinfo_id": 12260777
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur l’immigration et la protection des réfugiés, apportant des modifications corrélatives à d’autres lois et modifiant le Règlement sur l’immigration et la protection des réfugiés",
+          "en": "An Act to amend the Immigration and Refugee Protection Act, to make consequential amendments to other Acts and to amend the Immigration and Refugee Protection Regulations"
+        },
+        "url": "/bills/44-1/S-8/",
+        "number": "S-8",
+        "session": "44-1",
+        "introduced": "2022-05-17",
+        "legisinfo_id": 11792112
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi de mise en œuvre de la Convention sur les armes chimiques",
+          "en": "An Act to amend the Chemical Weapons Convention Implementation Act"
+        },
+        "url": "/bills/44-1/S-9/",
+        "number": "S-9",
+        "session": "44-1",
+        "introduced": "2022-06-02",
+        "legisinfo_id": 11833664
+      },
+      {
+        "name": {
+          "fr": "Loi portant mise en vigueur de l’accord en matière de gouvernance conclu avec la Nation des Anishinabes, modifiant la Loi sur l’autonomie gouvernementale de la bande indienne sechelte et la Loi sur l’autonomie gouvernementale des premières nations du Yukon et apportant des modifications connexe et corrélatives à d’autres lois",
+          "en": "An Act to give effect to the Anishinabek Nation Governance Agreement, to amend the Sechelt Indian Band Self-Government Act and the Yukon First Nations Self-Government Act and to make related and consequential amendments to other Acts"
+        },
+        "url": "/bills/44-1/S-10/",
+        "number": "S-10",
+        "session": "44-1",
+        "introduced": "2022-06-09",
+        "legisinfo_id": 11858783
+      },
+      {
+        "name": {
+          "fr": "Loi portant octroi à Sa Majesté de crédits pour l'administration publique fédérale pendant l'exercice se terminant le 31 mars 2024",
+          "en": "An Act for granting to His Majesty certain sums of money for the federal public administration for the fiscal year ending March 31, 2024"
+        },
+        "url": "/bills/44-1/C-54/",
+        "number": "C-54",
+        "session": "44-1",
+        "introduced": "2023-06-21",
+        "legisinfo_id": 12554589
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur la taxe d’accise (services de psychothérapie)",
+          "en": "An Act to amend the Excise Tax Act (psychotherapy services)"
+        },
+        "url": "/bills/44-1/C-218/",
+        "number": "C-218",
+        "session": "44-1",
+        "introduced": "2021-12-16",
+        "legisinfo_id": 11472482
+      },
+      {
+        "name": {
+          "fr": "Loi concernant des mesures visant la stabilité financière des établissements d’enseignement postsecondaire",
+          "en": "An Act respecting measures in relation to the financial stability of post-secondary institutions"
+        },
+        "url": "/bills/44-1/S-215/",
+        "number": "S-215",
+        "session": "44-1",
+        "introduced": "2021-11-24",
+        "legisinfo_id": 11474489
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant le Code criminel (intoxication volontaire extrême)",
+          "en": "An Act to amend the Criminal Code (self-induced extreme intoxication)"
+        },
+        "url": "/bills/44-1/C-28/",
+        "number": "C-28",
+        "session": "44-1",
+        "introduced": "2022-06-17",
+        "legisinfo_id": 11878436
+      },
+      {
+        "name": {
+          "fr": "Loi prévoyant la constitution d'un conseil national de réconciliation",
+          "en": "An Act to provide for the establishment of a national council for reconciliation"
+        },
+        "url": "/bills/44-1/C-29/",
+        "number": "C-29",
+        "session": "44-1",
+        "introduced": "2022-06-22",
+        "legisinfo_id": 11893577
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi de l'impôt sur le revenu (majoration temporaire du crédit pour la taxe sur les produits et services/taxe de vente harmonisée)",
+          "en": "An Act to amend the Income Tax Act (temporary enhancement to the Goods and Services Tax/Harmonized Sales Tax credit)"
+        },
+        "url": "/bills/44-1/C-30/",
+        "number": "C-30",
+        "session": "44-1",
+        "introduced": "2022-09-20",
+        "legisinfo_id": 11924004
+      },
+      {
+        "name": {
+          "fr": "Loi concernant des mesures d'allègement du coût de la vie relatives aux soins dentaires et au logement locatif",
+          "en": "An Act respecting cost of living relief measures related to dental care and rental housing"
+        },
+        "url": "/bills/44-1/C-31/",
+        "number": "C-31",
+        "session": "44-1",
+        "introduced": "2022-09-20",
+        "legisinfo_id": 11924005
+      },
+      {
+        "name": {
+          "fr": "Loi portant exécution de certaines dispositions de l'énoncé économique de l'automne déposé au Parlement le 3 novembre 2022 et de certaines dispositions du budget déposé au Parlement le 7 avril 2022",
+          "en": "An Act to implement certain provisions of the fall economic statement tabled in Parliament on November 3, 2022 and certain provisions of the budget tabled in Parliament on April 7, 2022"
+        },
+        "url": "/bills/44-1/C-32/",
+        "number": "C-32",
+        "session": "44-1",
+        "introduced": "2022-11-04",
+        "legisinfo_id": 12038143
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi électorale du Canada (âge de voter)",
+          "en": "An Act to amend the Canada Elections Act (voting age)"
+        },
+        "url": "/bills/44-1/C-210/",
+        "number": "C-210",
+        "session": "44-1",
+        "introduced": "2021-12-13",
+        "legisinfo_id": 11490131
+      },
+      {
+        "name": {
+          "fr": "Loi instituant le Mois du patrimoine arabe",
+          "en": "An Act respecting Arab Heritage Month"
+        },
+        "url": "/bills/44-1/C-232/",
+        "number": "C-232",
+        "session": "44-1",
+        "introduced": "2022-02-07",
+        "legisinfo_id": 11540841
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant le Code criminel et la Loi sur les juges (violence contre un partenaire intime)",
+          "en": "An Act to amend the Criminal Code and the Judges Act (violence against an intimate partner)"
+        },
+        "url": "/bills/44-1/C-233/",
+        "number": "C-233",
+        "session": "44-1",
+        "introduced": "2022-02-07",
+        "legisinfo_id": 11536206
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur le ministère des Affaires étrangères, du Commerce et du Développement, la Loi sur la justice pour les victimes de dirigeants étrangers corrompus (loi de Sergueï Magnitski), la Loi sur la radiodiffusion et la Loi interdisant les armes à sous-munitions",
+          "en": "An Act to amend the Department of Foreign Affairs, Trade and Development Act, the Justice for Victims of Corrupt Foreign Officials Act (Sergei Magnitsky Law), the Broadcasting Act and the Prohibiting Cluster Munitions Act"
+        },
+        "url": "/bills/44-1/C-281/",
+        "number": "C-281",
+        "session": "44-1",
+        "introduced": "2022-06-13",
+        "legisinfo_id": 11849768
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur le casier judiciaire et d’autres lois en conséquence et abrogeant un règlement",
+          "en": "An Act to amend the Criminal Records Act, to make consequential amendments to other Acts and to repeal a regulation"
+        },
+        "url": "/bills/44-1/S-212/",
+        "number": "S-212",
+        "session": "44-1",
+        "introduced": "2021-11-24",
+        "legisinfo_id": 11474459
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant le Code criminel (indépendance des tribunaux)",
+          "en": "An Act to amend the Criminal Code (independence of the judiciary)"
+        },
+        "url": "/bills/44-1/S-213/",
+        "number": "S-213",
+        "session": "44-1",
+        "introduced": "2021-11-24",
+        "legisinfo_id": 11474509
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant le Code criminel et la Loi sur l'enregistrement de renseignements sur les délinquants sexuels",
+          "en": "An Act to amend the Criminal Code and the Sex Offender Information Registration Act"
+        },
+        "url": "/bills/44-1/S-266/",
+        "number": "S-266",
+        "session": "44-1",
+        "introduced": "2023-06-06",
+        "legisinfo_id": 12500442
+      },
+      {
+        "name": {
+          "fr": "Loi concernant l’élaboration d’une stratégie nationale sur l’énergie renouvelable",
+          "en": "An Act respecting the development of a national renewable energy strategy"
+        },
+        "url": "/bills/44-1/C-312/",
+        "number": "C-312",
+        "session": "44-1",
+        "introduced": "2023-02-01",
+        "legisinfo_id": 12030704
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur les transports au Canada (protection des passagers aériens)",
+          "en": "An Act to amend the Canada Transportation Act (air passenger protection)"
+        },
+        "url": "/bills/44-1/C-327/",
+        "number": "C-327",
+        "session": "44-1",
+        "introduced": "2023-03-20",
+        "legisinfo_id": 12273627
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant le Code criminel (organisations criminelles)",
+          "en": "An Act to amend the Criminal Code (criminal organizations)"
+        },
+        "url": "/bills/44-1/C-279/",
+        "number": "C-279",
+        "session": "44-1",
+        "introduced": "2022-06-02",
+        "legisinfo_id": 11825869
+      },
+      {
+        "name": {
+          "fr": "Loi portant exécution de certaines dispositions de la mise à jour économique et budgétaire déposée au Parlement le 14 décembre 2021 et mettant en œuvre d'autres mesures",
+          "en": "An Act to implement certain provisions of the economic and fiscal update tabled in Parliament on December 14, 2021 and other measures"
+        },
+        "url": "/bills/44-1/C-8/",
+        "number": "C-8",
+        "session": "44-1",
+        "introduced": "2021-12-15",
+        "legisinfo_id": 11496808
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant le Code criminel, la Loi sur l’enregistrement de renseignements sur les délinquants sexuels et la Loi sur le transfèrement international des délinquants",
+          "en": "An Act to amend the Criminal Code, the Sex Offender Information Registration Act and the International Transfer of Offenders Act"
+        },
+        "url": "/bills/44-1/S-12/",
+        "number": "S-12",
+        "session": "44-1",
+        "introduced": "2023-04-26",
+        "legisinfo_id": 12367527
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant le Code criminel et la Loi sur la protection d’espèces animales ou végétales sauvages et la réglementation de leur commerce international et interprovincial",
+          "en": "An Act to amend the Criminal Code and the Wild Animal and Plant Protection and Regulation of International and Interprovincial Trade Act"
+        },
+        "url": "/bills/44-1/S-15/",
+        "number": "S-15",
+        "session": "44-1",
+        "introduced": "2023-11-21",
+        "legisinfo_id": 12723663
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur le système correctionnel et la mise en liberté sous condition",
+          "en": "An Act to amend the Corrections and Conditional Release Act"
+        },
+        "url": "/bills/44-1/S-230/",
+        "number": "S-230",
+        "session": "44-1",
+        "introduced": "2021-12-02",
+        "legisinfo_id": 11481531
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant le Code criminel, la Loi sur le casier judiciaire, la Loi sur la défense nationale et la Loi sur l’identification par les empreintes génétiques",
+          "en": "An Act to amend the Criminal Code, the Criminal Records Act, the National Defence Act and the DNA Identification Act"
+        },
+        "url": "/bills/44-1/S-231/",
+        "number": "S-231",
+        "session": "44-1",
+        "introduced": "2021-12-02",
+        "legisinfo_id": 11481547
+      },
+      {
+        "name": {
+          "fr": "Loi visant à fournir un soutien supplémentaire en réponse à la COVID-19",
+          "en": "An Act to provide further support in response to COVID-19"
+        },
+        "url": "/bills/44-1/C-2/",
+        "number": "C-2",
+        "session": "44-1",
+        "introduced": "2021-11-24",
+        "legisinfo_id": 11473161
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant le Code criminel et le Code canadien du travail",
+          "en": "An Act to amend the Criminal Code and the Canada Labour Code"
+        },
+        "url": "/bills/44-1/C-3/",
+        "number": "C-3",
+        "session": "44-1",
+        "introduced": "2021-11-26",
+        "legisinfo_id": 11474302
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant le Code criminel (thérapie de conversion)",
+          "en": "An Act to amend the Criminal Code (conversion therapy)"
+        },
+        "url": "/bills/44-1/C-4/",
+        "number": "C-4",
+        "session": "44-1",
+        "introduced": "2021-11-29",
+        "legisinfo_id": 11476884
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant le Code criminel et la Loi réglementant certaines drogues et autres substances",
+          "en": "An Act to amend the Criminal Code and the Controlled Drugs and Substances Act"
+        },
+        "url": "/bills/44-1/C-5/",
+        "number": "C-5",
+        "session": "44-1",
+        "introduced": "2021-12-07",
+        "legisinfo_id": 11482450
+      },
+      {
+        "name": {
+          "fr": "Loi portant octroi à Sa Majesté de crédits pour l'administration publique fédérale pendant l'exercice se terminant le 31 mars 2022",
+          "en": "An Act for granting to Her Majesty certain sums of money for the federal public administration for the fiscal year ending March 31, 2022"
+        },
+        "url": "/bills/44-1/C-6/",
+        "number": "C-6",
+        "session": "44-1",
+        "introduced": "2021-12-09",
+        "legisinfo_id": 11488565
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur l’immunité des États, le Code criminel et la Loi sur l’immigration et la protection des réfugiés",
+          "en": "An Act to amend the State Immunity Act, the Criminal Code and the Immigration and Refugee Protection Act"
+        },
+        "url": "/bills/44-1/C-350/",
+        "number": "C-350",
+        "session": "44-1",
+        "introduced": "2023-06-21",
+        "legisinfo_id": 12546056
+      },
+      {
+        "name": {
+          "fr": "Loi concernant les plateformes de communication en ligne rendant disponible du contenu de nouvelles aux personnes se trouvant au Canada",
+          "en": "An Act respecting online communications platforms that make news content available to persons in Canada"
+        },
+        "url": "/bills/44-1/C-18/",
+        "number": "C-18",
+        "session": "44-1",
+        "introduced": "2022-04-05",
+        "legisinfo_id": 11668222
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur les aliments et drogues (produits de santé naturels)",
+          "en": "An Act to amend the Food and Drugs Act (natural health products)"
+        },
+        "url": "/bills/44-1/C-368/",
+        "number": "C-368",
+        "session": "44-1",
+        "introduced": "2023-12-05",
+        "legisinfo_id": 12751785
+      },
+      {
+        "name": {
+          "fr": "Loi concernant certaines mesures liées à la COVID-19",
+          "en": "An Act respecting certain measures related to COVID-19"
+        },
+        "url": "/bills/44-1/C-10/",
+        "number": "C-10",
+        "session": "44-1",
+        "introduced": "2022-01-31",
+        "legisinfo_id": 11525611
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur la radiodiffusion et apportant des modifications connexes et corrélatives à d'autres lois",
+          "en": "An Act to amend the Broadcasting Act and to make related and consequential amendments to other Acts"
+        },
+        "url": "/bills/44-1/C-11/",
+        "number": "C-11",
+        "session": "44-1",
+        "introduced": "2022-02-02",
+        "legisinfo_id": 11528728
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur la sécurité de la vieillesse (Supplément de revenu garanti)",
+          "en": "An Act to amend the Old Age Security Act (Guaranteed Income Supplement)"
+        },
+        "url": "/bills/44-1/C-12/",
+        "number": "C-12",
+        "session": "44-1",
+        "introduced": "2022-02-08",
+        "legisinfo_id": 11545366
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur l’immigration et la protection des réfugiés (reconnaissance des titres de compétences étrangers)",
+          "en": "An Act to amend the Immigration and Refugee Protection Act (recognition of foreign credentials)"
+        },
+        "url": "/bills/44-1/C-286/",
+        "number": "C-286",
+        "session": "44-1",
+        "introduced": "2022-06-15",
+        "legisinfo_id": 11818113
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant le Code criminel (actes de stérilisation)",
+          "en": "An Act to amend the Criminal Code (sterilization procedures)"
+        },
+        "url": "/bills/44-1/S-250/",
+        "number": "S-250",
+        "session": "44-1",
+        "introduced": "2022-06-14",
+        "legisinfo_id": 11875208
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur la Banque du Canada (mandat, gouvernance de la politique monétaire et reddition de comptes)",
+          "en": "An Act to amend the Bank of Canada Act (mandate, monetary policy governance and accountability)"
+        },
+        "url": "/bills/44-1/S-275/",
+        "number": "S-275",
+        "session": "44-1",
+        "introduced": "2023-09-20",
+        "legisinfo_id": 12573266
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur la Société canadienne des postes (saisie) et apportant des modifications connexes à d’autres lois",
+          "en": "An Act to amend the Canada Post Corporation Act (seizure) and to make related amendments to other Acts"
+        },
+        "url": "/bills/44-1/S-256/",
+        "number": "S-256",
+        "session": "44-1",
+        "introduced": "2022-11-22",
+        "legisinfo_id": 12085096
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant le Code criminel (déverrouillage de dispositifs électroniques)",
+          "en": "An Act to amend the Criminal Code (unlocking of electronic device)"
+        },
+        "url": "/bills/44-1/C-370/",
+        "number": "C-370",
+        "session": "44-1",
+        "introduced": "2023-12-07",
+        "legisinfo_id": 12751666
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur les juges",
+          "en": "An Act to amend the Judges Act"
+        },
+        "url": "/bills/44-1/S-3/",
+        "number": "S-3",
+        "session": "44-1",
+        "introduced": "2021-12-01",
+        "legisinfo_id": 11479860
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant le Tarif des douanes (marchandises en provenance du Xinjiang)",
+          "en": "An Act to amend the Customs Tariff (goods from Xinjiang)"
+        },
+        "url": "/bills/44-1/S-204/",
+        "number": "S-204",
+        "session": "44-1",
+        "introduced": "2021-11-24",
+        "legisinfo_id": 11474400
+      },
+      {
+        "name": {
+          "fr": "Loi portant octroi à Sa Majesté de crédits pour l’administration publique fédérale pendant l’exercice se terminant le 31 mars 2023",
+          "en": "An Act for granting to Her Majesty certain sums of money for the federal public administration for the fiscal year ending March 31, 2023"
+        },
+        "url": "/bills/44-1/C-24/",
+        "number": "C-24",
+        "session": "44-1",
+        "introduced": "2022-06-07",
+        "legisinfo_id": 11838108
+      },
+      {
+        "name": {
+          "fr": "Loi portant octroi à Sa Majesté de crédits pour l’administration publique fédérale pendant l’exercice se terminant le 31 mars 2023",
+          "en": "An Act for granting to Her Majesty certain sums of money for the federal public administration for the fiscal year ending March 31, 2023"
+        },
+        "url": "/bills/44-1/C-25/",
+        "number": "C-25",
+        "session": "44-1",
+        "introduced": "2022-06-07",
+        "legisinfo_id": 11838128
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur le Conseil de la radiodiffusion et des télécommunications canadiennes (spécificité culturelle du Québec et francophonie)",
+          "en": "An Act to amend the Canadian Radio-television and Telecommunications Commission Act (Quebec’s cultural distinctiveness and French-speaking communities)"
+        },
+        "url": "/bills/44-1/C-354/",
+        "number": "C-354",
+        "session": "44-1",
+        "introduced": "2023-09-19",
+        "legisinfo_id": 12566692
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant le Code criminel (violence envers les femmes enceintes)",
+          "en": "An Act to amend the Criminal Code (violence against pregnant women)"
+        },
+        "url": "/bills/44-1/C-311/",
+        "number": "C-311",
+        "session": "44-1",
+        "introduced": "2023-01-31",
+        "legisinfo_id": 12174725
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur l’Office d’investissement du régime de pensions du Canada (placements)",
+          "en": "An Act to amend the Canada Pension Plan Investment Board Act (investments)"
+        },
+        "url": "/bills/44-1/C-315/",
+        "number": "C-315",
+        "session": "44-1",
+        "introduced": "2023-02-14",
+        "legisinfo_id": 12216460
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant le Code criminel (réforme sur la mise en liberté sous caution)",
+          "en": "An Act to amend the Criminal Code (bail reform)"
+        },
+        "url": "/bills/44-1/C-48/",
+        "number": "C-48",
+        "session": "44-1",
+        "introduced": "2023-05-16",
+        "legisinfo_id": 12426046
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi de 2001 sur la marine marchande du Canada (brevet d’aptitude)",
+          "en": "An Act to amend the Canada Shipping Act, 2001 (certificate of competency)"
+        },
+        "url": "/bills/44-1/C-346/",
+        "number": "C-346",
+        "session": "44-1",
+        "introduced": "2023-06-20",
+        "legisinfo_id": 12537502
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi sur les épaves et les bâtiments abandonnés ou dangereux (stratégie nationale relative aux bâtiments abandonnés)",
+          "en": "An Act to amend the Wrecked, Abandoned or Hazardous Vessels Act (national strategy respecting abandoned vessels)"
+        },
+        "url": "/bills/44-1/C-344/",
+        "number": "C-344",
+        "session": "44-1",
+        "introduced": "2023-06-15",
+        "legisinfo_id": 12526941
+      },
+      {
+        "name": {
+          "fr": "Loi édictant la Loi sur la responsabilité en matière de transport aérien et modifiant la Loi sur les transports au Canada et la Loi maritime du Canada",
+          "en": "An Act to enact the Air Transportation Accountability Act and to amend the Canada Transportation Act and the Canada Marine Act"
+        },
+        "url": "/bills/44-1/C-52/",
+        "number": "C-52",
+        "session": "44-1",
+        "introduced": "2023-06-20",
+        "legisinfo_id": 12540212
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant la Loi constitutionnelle de 1867 et la Loi sur le Parlement du Canada (présidence du Sénat)",
+          "en": "An Act to amend the Constitution Act, 1867 and the Parliament of Canada Act (Speaker of the Senate)"
+        },
+        "url": "/bills/44-1/S-226/",
+        "number": "S-226",
+        "session": "44-1",
+        "introduced": "2021-11-24",
+        "legisinfo_id": 11474620
+      },
+      {
+        "name": {
+          "fr": "Loi concernant les accords de non-divulgation",
+          "en": "An Act respecting non-disclosure agreements"
+        },
+        "url": "/bills/44-1/S-261/",
+        "number": "S-261",
+        "session": "44-1",
+        "introduced": "2023-05-09",
+        "legisinfo_id": 12411706
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant le Code criminel et la Loi sur les Indiens",
+          "en": "An Act to amend the Criminal Code and the Indian Act"
+        },
+        "url": "/bills/44-1/S-268/",
+        "number": "S-268",
+        "session": "44-1",
+        "introduced": "2023-06-20",
+        "legisinfo_id": 12551590
+      },
+      {
+        "name": {
+          "fr": "Loi instituant la Journée nationale de l’entrepreneuriat féminin",
+          "en": "An Act to establish National Women’s Entrepreneurship Day"
+        },
+        "url": "/bills/44-1/C-306/",
+        "number": "C-306",
+        "session": "44-1",
+        "introduced": "2022-11-17",
+        "legisinfo_id": 12061932
+      },
+      {
+        "name": {
+          "fr": "Loi modifiant le Code canadien du travail (produits menstruels)",
+          "en": "An Act to amend the Canada Labour Code (menstrual products)"
+        },
+        "url": "/bills/44-1/C-307/",
+        "number": "C-307",
+        "session": "44-1",
+        "introduced": "2022-11-21",
+        "legisinfo_id": 11960458
+      }
+    ]
+  }

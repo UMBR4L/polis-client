@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Routes, Link, BrowserRouter } from "react-router-dom";
+
+import BillsList from "./BillsList"; // Import the BillsList component
+import BillDetail from "./BillDetail";
+
+import billsData from "./assets/data/bills-list.json"; // Adjust the path as necessary
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div>
+        <nav>
+          <Link to="/">Home</Link>
+        </nav>
+        <Routes>
+          <Route path="/" element={<BillsList bills={billsData.objects} />} />
+          <Route path="/bill/:billId" element={<BillDetail bills={billsData.objects} />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
