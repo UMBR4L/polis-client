@@ -1,21 +1,27 @@
+// App.js
+
 import React from "react";
-import { Route, Routes, Link, BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import "./App.scss";
+import BillsListPage from "./pages/BillsListPage/BillsListPage"; // Import the BillsListPage component
+import BillDetailsPage from "./pages/BillDetailsPage/BillDetailsPage.js";
 
-import BillsList from "./BillsList"; // Import the BillsList component
-import BillDetail from "./BillDetail";
-
-import billsData from "./assets/data/bills-list.json"; // Adjust the path as necessary
+import billsData from "./assets/data/bills-list.json";
 
 function App() {
   return (
     <BrowserRouter>
       <div>
-        <nav>
-          <Link to="/">Home</Link>
-        </nav>
         <Routes>
-          <Route path="/" element={<BillsList bills={billsData.objects} />} />
-          <Route path="/bill/:billId" element={<BillDetail bills={billsData.objects} />} />
+          <Route
+            path="/"
+            element={<BillsListPage bills={billsData.objects} />}
+          />
+          } /> {/* Use BillsListPage */}
+          <Route
+            path="/bill/:billId"
+            element={<BillDetailsPage bills={billsData.objects} />}
+          />
         </Routes>
       </div>
     </BrowserRouter>
