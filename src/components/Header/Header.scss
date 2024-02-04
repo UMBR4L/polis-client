@@ -1,11 +1,23 @@
+@use "../../styles/partials/variables" as *;
+
 .header {
     position: relative;
     z-index: 1;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 1%;
+    // left: 2%;
+    text-align: center;
+    padding-right: $spacing-unit;
 
     &__logo {
-        width: 20%;
+        width: 15%;
+        border-radius: 50%;
+        // box-shadow: 3px 3px 5px $accent-color; /* Soft shadow */
+        transition: transform 0.2s ease-in-out; /* Add a subtle hover effect */
+      
+        &:hover {
+          transform: translateY(-3px) translateX(-2px); /* Move the bill up slightly on hover */
+          box-shadow: 2px 2px 4px $accent-color; /* Increase shadow on hover */
+        }
     }
 }

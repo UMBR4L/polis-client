@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 // Define font-face
 @font-face {
   font-family: "DMSerifText-Regular";
@@ -18,12 +20,12 @@ $font-family-italic: "DMSerifText-Italic";
 // Typography variables
 
 // Font sizes
-$font-size-base: 16px; // Base font size
-$font-size-h1: 3rem; // Heading 1
-$font-size-h2: 2.5rem; // Heading 2
-$font-size-h3: 2.25rem; // Heading 3
-$font-size-h4: 2.125rem; // Heading 4
-$font-size-h5: 2rem; // Heading 5
+$font-size-base: 8px; // Base font size
+$font-size-h1: 2rem; // Heading 1
+$font-size-h2: 1.5rem; // Heading 2
+$font-size-h3: 1.25rem; // Heading 3
+$font-size-h4: 1.125rem; // Heading 4
+$font-size-h5: 1rem; // Heading 5
 $font-size-p: 1rem; // Paragraph
 
 // Line heights
@@ -71,6 +73,11 @@ $font-weight-p: 400; // Paragraph
 body {
   font-family: $font-family-regular; // Use the small font by default
   font-size: $font-size-base;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
 }
 
 h1 {
