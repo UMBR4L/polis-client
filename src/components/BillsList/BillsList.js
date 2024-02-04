@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 const BillsList = ({ bills }) => {
   return (
     <div className="bills-list">
-      <h2>Bills List</h2>
       <ul>
         {bills.map((bill, index) => (
           <li key={index} className="bill">
