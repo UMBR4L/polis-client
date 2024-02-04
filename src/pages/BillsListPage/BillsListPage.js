@@ -1,7 +1,6 @@
 // BillsListPage.js
 
 import React from "react";
-import { Link } from "react-router-dom";
 import BillsList from "../../components/BillsList/BillsList.js";
 import "./BillsListPage.scss"
 
