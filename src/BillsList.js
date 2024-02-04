@@ -19,37 +19,6 @@ const BillsList = ({ bills }) => {
           </li>
         ))}
       </ul>
-      <style jsx>{`
-        .bills-list {
-          font-family: Arial, sans-serif;
-          color: #333;
-        }
-        h2 {
-          color: #444;
-        }
-        ul {
-          list-style-type: none;
-          padding: 0;
-        }
-        li.bill {
-          border-bottom: 1px solid #eee;
-          padding: 10px 0;
-        }
-        li.bill h3 {
-          margin: 0 0 5px 0;
-          color: #0074d9;
-        }
-        li.bill p {
-          margin: 5px 0;
-        }
-        li.bill a {
-          color: #0074d9;
-          text-decoration: none;
-        }
-        li.bill a:hover {
-          text-decoration: underline;
-        }
-      `}</style>
     </div>
   );
 };
