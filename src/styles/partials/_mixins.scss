@@ -1,0 +1,21 @@
+// MEDIA QUERIES
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1020px) {
+        @content;
+    }
+}
+
+// Button Mixin
+@mixin button($background-color, $text-color) {
+    background-color: $background-color;
+    color: $text-color;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
