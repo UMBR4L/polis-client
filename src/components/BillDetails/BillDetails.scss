@@ -12,12 +12,10 @@
 
   /* Define styles for different sections */
   .bill-details__section {
-    // margin-bottom: 20px;
     padding: 0.5rem 0.5rem 0.5rem 1rem;
     background-color: $primary-color;
     border: 0.3rem solid $background-color;
     border-bottom: none;
-    border-right: none;
 
     &-heading {
       font-size: 1.2rem;
