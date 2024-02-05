@@ -6,25 +6,32 @@ import BillDetail from "../../components/BillDetails/BillDetails.js"; // Import 
 const BillDetailsPage = (selectedBill) => {
   const { billId, session } = useParams();
   const [openaiResponse, setOpenaiResponse] = useState(null);
-  const [loading, setLoading] = useState(true); // Add loading state
-
-  console.log("billId:", billId);
-  console.log("session:", session);
+  const [loading, setLoading] = useState(true);
 
   const apiUrl = `http://localhost:8080/api/openai?`;
 
   useEffect(() => {
     const fetchBillDetails = async (billId, session) => {
       try {
-        const response = await axios.get(
-          `${apiUrl}billNumber=${billId}&session=${session}`
-        );
-        // Set loading to false when the data is fetched
-        console.log(response)
+        // Check if the response is already cached in localStorage
+        const cachedResponse = localStorage.getItem(`bill_${billId}_${session}`);
+        
+        if (cachedResponse) {
+          // If cached response exists, use it and avoid making a new API call
+          setOpenaiResponse(JSON.parse(cachedResponse));
+          setLoading(false);
+        } else {
+          // If not cached, make the API call
+          const response = await axios.get(
+            `${apiUrl}billNumber=${billId}&session=${session}`
+          );
 
-        setOpenaiResponse(response.data);
-        setLoading(false);
-        return openaiResponse; // This should contain the OpenAI response
+          setOpenaiResponse(response.data);
+          setLoading(false);
+
+          // Cache the API response in localStorage
+          localStorage.setItem(`bill_${billId}_${session}`, JSON.stringify(response.data));
+        }
       } catch (error) {
         console.error("Error fetching bill details:", error);
         throw error;
@@ -33,12 +40,12 @@ const BillDetailsPage = (selectedBill) => {
 
     // Call the function to fetch OpenAI data
     fetchBillDetails(billId, session);
-  },[]);
+  }, [apiUrl, billId, session]);
 
   return (
     <div className="bill-details-page">
-      {loading ? ( // Conditionally render based on the loading state
-        <p>Loading...</p> // You can customize the loading UI here
+      {loading ? (
+        <p>Loading...</p>
       ) : (
         <BillDetail openaiResponse={openaiResponse} />
       )}

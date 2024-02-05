@@ -1,14 +1,10 @@
 // Color Palette
-$primary-color: #ffcc99;
+$primary-color: #fde6ce;
 $secondary-color: #ffcc99;   // Soft pastel peach
 $tertiary-color: #a6ccb3;    // Dusty mint green
-$accent-color: #3d281d;      // Dark brown accent color
+$accent-color: #633015;      // Dark brown accent color
 $background-color: #f0e0d0;
-$text-color: #1a1c1a;       // Dark text color for contrast
-
-// Font
-$font-family: 'Georgia', serif;
-$font-size-base: 16px; // Base font size
+$text-color: #0a5d0a;       // Dark text color for contrast
 
 // Spacing
 $spacing-unit: 0.5rem; // 0.5rem spacing unit
@@ -22,3 +18,6 @@ $margin-large: 1.5rem;   // Large margin
 $padding-small: 0.5rem;  // Small padding
 $padding-medium: 1rem;   // Medium padding
 $padding-large: 1.5rem;  // Large padding
+
+// Border Radius
+$border-radius: 4px;

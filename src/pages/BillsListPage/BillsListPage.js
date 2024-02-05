@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from "react";
 import BillsList from "../../components/BillsList/BillsList.js";
 import "./BillsListPage.scss";
-import BillDetailsPage from "../BillDetailsPage/BillDetailsPage.js";
 import { fetchBillsWithFilter } from "../../utils/api.js";
 
 function BillsListPage({ billsData }) {
@@ -17,6 +16,8 @@ function BillsListPage({ billsData }) {
         // Sort the data by 'introduced' property in descending order (latest to oldest)
         data.sort((a, b) => new Date(b.introduced) - new Date(a.introduced));
         setBills(data);
+        // Clear the entire localStorage
+        localStorage.clear();
       })
       .catch((error) => console.error(error));
   }, [filterName]);

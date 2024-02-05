@@ -1,0 +1,52 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typograghy" as *;
+
+/* BillDetails.scss */
+
+.bill-details {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Define styles for different sections */
+  .bill-details__section {
+    // margin-bottom: 20px;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    background-color: $primary-color;
+    border: 0.3rem solid $background-color;
+    border-bottom: none;
+    border-right: none;
+
+    &-heading {
+      font-size: 1.2rem;
+      color: $text-color;
+    }
+
+    &--half {
+      width: calc(50%);
+    }
+
+    ul {
+      list-style-type: none; /* Remove default bullets */
+      padding-left: $spacing-unit; /* Remove default padding */
+      li {
+        padding-left: $spacing-unit;
+      }
+    }
+  }
+
+  /* Define specific list-style-type styles for different sections */
+  .bill-details__changes ul {
+    list-style-type: "\1F4A1";
+  }
+
+  .bill-details__pros ul {
+    list-style-type: "\1F44D";
+  }
+
+  .bill-details__cons ul {
+    list-style-type: "\1F44E";
+  }
+}
