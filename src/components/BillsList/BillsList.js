@@ -1,11 +1,10 @@
-import React, {useEffect, useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./BillsList.scss";
-import { fetchBillsWithFilter } from '../../utils/api';
+import BillDetailsPage from "../../pages/BillDetailsPage/BillDetailsPage";
 
-const BillsList = () => {
-  const [bills, setBills] = useState([]);
-  const [filterName, setFilterName] = useState('introducedAfter2020'); // Set your filter as needed
+const BillsList = ({ bills }) => {
+  const [selectedBill, setSelectedBill] = useState(null);
 
   // Function to format the date
   const formatDate = (dateString) => {
@@ -34,30 +33,33 @@ const BillsList = () => {
     }
   }
 
-  useEffect(() => {
-    // Fetch bills when the component mounts or when the filter changes
-    fetchBillsWithFilter(filterName)
-      .then((data) => {
-        // Sort the data by 'introduced' property in descending order (latest to oldest)
-        data.sort((a, b) => new Date(b.introduced) - new Date(a.introduced));
-        setBills(data);
-      })
-      .catch((error) => console.error(error));
-  }, [filterName]);
+  const handleBillSelect = (bill) => {
+    setSelectedBill(bill);
+  };
+
+  
 
   return (
-    <ul className="bill__container">
-      {bills.map((bill, index) => (
-        <li key={index} className="bill">
-          <Link to={`/bill/${bill.number}`} key={bill.number}>
-            <h3>{bill.title}</h3>
-            <p>Bill Number: {bill.bill_ID}</p>
-            <p>Session: {bill.session_ID}</p>
-            <p>Introduced: {formatDate(bill.introduced)}</p>
-          </Link>
-        </li>
-      ))}
-    </ul>
+    <div>
+      <ul className="bill__container">
+        {bills.map((bill, index) => (
+          <li key={index} className="bill">
+            <Link
+              to={`/bill/${bill.bill_ID}/${bill.session_ID}?introduced=${bill.introduced}`}
+              key={bill.number}
+              onClick={() => handleBillSelect(bill)} // Handle bill click
+            >
+              <h3>{bill.title}</h3>
+              <p>Bill Number: {bill.bill_ID}</p>
+              <p>Session: {bill.session_ID}</p>
+              <p>Introduced: {formatDate(bill.introduced)}</p>
+            </Link>
+          </li>
+        ))}
+      </ul>
+      {selectedBill && <BillDetailsPage bill={selectedBill} />}{" "}
+      {/* Pass selectedBill */}
+    </div>
   );
 };
 
