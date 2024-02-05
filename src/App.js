@@ -6,7 +6,6 @@ import "./App.scss";
 import Header from "./components/Header/Header.js";
 import BillsListPage from "./pages/BillsListPage/BillsListPage"; // Import the BillsListPage component
 import BillDetailsPage from "./pages/BillDetailsPage/BillDetailsPage.js";
-
 import billsData from "./assets/data/bills-list.json";
 
 function App() {
@@ -18,11 +17,11 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={<BillsListPage bills={billsData.objects} />}
+            element={<BillsListPage bills={billsData}/>}   
           />
           <Route
-            path="/bill/:billId"
-            element={<BillDetailsPage bills={billsData.objects} />}
+            path="/bill/:billId/:session"
+            element={<BillDetailsPage />}
           />
         </Routes>
       </div>
