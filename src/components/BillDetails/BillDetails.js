@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams, useLocation } from "react-router-dom";
+import { formatDate } from "../../utils/dateUtils";
 import "./BillDetails.scss";
 
 const BillDetail = ({ openaiResponse }) => {
@@ -14,7 +15,9 @@ const BillDetail = ({ openaiResponse }) => {
     return (
       <ul>
         {items.map((item, index) => (
-          <li key={index}>{item}</li>
+          <li key={index}>
+            <p>{item}</p>
+          </li>
         ))}
       </ul>
     );
@@ -39,17 +42,25 @@ const BillDetail = ({ openaiResponse }) => {
       "Royal Assent",
     ];
 
-    // Create a regular expression pattern to match major stages
+    // Convert progress string to lowercase
+    const lowercaseProgress = progress.toLowerCase();
+
+    // Create a regular expression pattern to match major stages (with lowercase)
     const pattern = new RegExp(majorStages.join("|"), "gi");
 
-    // Use regular expression to find matches in the progress string
-    const matches = progress.match(pattern);
+    // Use regular expression to find matches in the lowercase progress string
+    const matches = lowercaseProgress.match(pattern);
 
     console.log("matches: " + matches);
 
     return (
       <ul>
-        {matches && matches.map((stage, index) => <li key={index}>{stage}</li>)}
+        {matches &&
+          matches.map((stage, index) => (
+            <li key={index}>
+              <p>{stage}</p>
+            </li>
+          ))}
       </ul>
     );
   };
@@ -59,28 +70,41 @@ const BillDetail = ({ openaiResponse }) => {
     <div className="bill-details">
       {parsedOpenaiResponse ? (
         <div className="bill-details__container">
-          <div className="bill-details__heading-container">
-            <h2 className="bill-details__heading">
+          <div className="bill-details__section bill-details__section-heading">
+            <h1 className="bill-details__heading">
               {parsedOpenaiResponse.Name}
-            </h2>
+            </h1>
           </div>
-          <section className="bill-details__intro-section">
-            <h3>Bill ID: {billId}</h3>
-            <h3>Session ID: {session}</h3>
-            <h3>Introduced: {introduced}</h3>
-            <h3>Intent: {parsedOpenaiResponse.Intent}</h3>
+          <section className="bill-details__section bill-details__section--half">
+            {/* <h3>Bill ID: {billId}</h3> */}
+            <h4 className="bill-details__section-heading">Session ID</h4>{" "}
+            <p>{session}</p>
+            <h4 className="bill-details__section-heading">Introduced</h4>{" "}
+            <p>{formatDate(introduced)}</p>
           </section>
-          <section>
-            Proposed Changes: {renderList(parsedOpenaiResponse.Changes)}
+          <section className="bill-details__section">
+            <h3 className="bill-details__section-heading">Intent</h3>{" "}
+            <p>{parsedOpenaiResponse.Intent}</p>
           </section>
-          <section>Pros: {renderList(parsedOpenaiResponse.Pros)}</section>
-          <section>Cons: {renderList(parsedOpenaiResponse.Cons)}</section>
-          <section>
-            Progress: {renderMajorStages(parsedOpenaiResponse.Progress)}
+          <section className="bill-details__section bill-details__changes">
+            <h3 className="bill-details__section-heading">Proposed Changes</h3>
+            {renderList(parsedOpenaiResponse.Changes)}
+          </section>
+          <section className="bill-details__section bill-details__section--half bill-details__pros">
+            <h3 className="bill-details__section-heading">Pros</h3>
+            {renderList(parsedOpenaiResponse.Pros)}
+          </section>
+          <section className="bill-details__section bill-details__section--half bill-details__cons">
+            <h3 className="bill-details__section-heading">Cons</h3>{" "}
+            {renderList(parsedOpenaiResponse.Cons)}
+          </section>
+          <section className="bill-details__section">
+            <h3 className="bill-details__section-heading">Progress:</h3>{" "}
+            {renderMajorStages(parsedOpenaiResponse.Progress)}
           </section>
         </div>
       ) : (
-        <p>Bill not found.</p>
+        <p className="bill-details__not-found">Bill not found.</p>
       )}
     </div>
   );

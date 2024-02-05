@@ -2,36 +2,10 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./BillsList.scss";
 import BillDetailsPage from "../../pages/BillDetailsPage/BillDetailsPage";
+import { formatDate } from "../../utils/dateUtils";
 
 const BillsList = ({ bills }) => {
   const [selectedBill, setSelectedBill] = useState(null);
-
-  // Function to format the date
-  const formatDate = (dateString) => {
-    const options = { year: "numeric", month: "long", day: "numeric" };
-    const date = new Date(dateString);
-    const day = date.getDate();
-    const formattedDate = date
-      .toLocaleDateString(undefined, options)
-      .replace(day, day + getDaySuffix(day));
-    return formattedDate;
-  };
-
-  function getDaySuffix(day) {
-    if (day >= 11 && day <= 13) {
-      return "th";
-    }
-    switch (day % 10) {
-      case 1:
-        return "st";
-      case 2:
-        return "nd";
-      case 3:
-        return "rd";
-      default:
-        return "th";
-    }
-  }
 
   const handleBillSelect = (bill) => {
     setSelectedBill(bill);
