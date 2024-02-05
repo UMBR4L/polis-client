@@ -37,8 +37,6 @@ const BillsList = ({ bills }) => {
     setSelectedBill(bill);
   };
 
-  
-
   return (
     <div>
       <ul className="bill__container">
