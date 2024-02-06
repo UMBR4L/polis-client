@@ -12,10 +12,11 @@
 
   /* Define styles for different sections */
   .bill-details__section {
-    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    padding: 0.5rem;
     background-color: $primary-color;
     border: 0.3rem solid $background-color;
     border-bottom: none;
+    width: calc(100% - $spacing-unit);
 
     &-heading {
       color: $text-color;
@@ -33,9 +34,18 @@
 
     ul {
       list-style-type: none; /* Remove default bullets */
-      padding-left: $spacing-unit; /* Remove default padding */
+      padding-left: 2 * $spacing-unit; /* Remove default padding */
       li {
         padding-left: $spacing-unit;
+      }
+    }
+
+    &--progress {
+      display: flex;
+      align-items: flex-end;
+      width: 100%;
+      h3 {
+        width: auto;
       }
     }
   }

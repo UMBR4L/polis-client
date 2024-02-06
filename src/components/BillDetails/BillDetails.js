@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams, useLocation } from "react-router-dom";
 import { formatDate } from "../../utils/dateUtils";
+import ProgressBar from "../ProgressBar/ProgressBar";
 import "./BillDetails.scss";
 
 const BillDetail = ({ openaiResponse }) => {
@@ -23,59 +24,21 @@ const BillDetail = ({ openaiResponse }) => {
     );
   };
 
-  // Function to filter and render major stages of progress
-  const renderMajorStages = (progress) => {
-    // Define the major stages you want to filter
-    const majorStages = [
-      "law-making process",
-      "introduced",
-      "first reading in the Senate",
-      "second reading in the Senate",
-      "consideration in committee in the Senate",
-      "report stage in the Senate",
-      "third reading in the Senate",
-      "first reading in the House of Commons",
-      "second reading in the House of Commons",
-      "consideration in committee in the House of Commons",
-      "report stage in the House of Commons",
-      "third reading in the House of Commons",
-      "Royal Assent",
-    ];
-
-    // Convert progress string to lowercase
-    const lowercaseProgress = progress.toLowerCase();
-
-    // Create a regular expression pattern to match major stages (with lowercase)
-    const pattern = new RegExp(majorStages.join("|"), "gi");
-
-    // Use regular expression to find matches in the lowercase progress string
-    const matches = lowercaseProgress.match(pattern);
-
-    console.log("matches: " + matches);
-
-    return (
-      <ul>
-        {matches &&
-          matches.map((stage, index) => (
-            <li key={index}>
-              <p>{stage}</p>
-            </li>
-          ))}
-      </ul>
-    );
+  // Function to render the DALL-E image
+  const renderDALLEImage = () => {
+    if (openaiResponse && openaiResponse.imageURL) {
+      return (
+        <div className="bill-details__section bill-details__section--half bill-details__section--image">
+          <img
+            className="bill-details__dalle-image"
+            src={openaiResponse.imageURL}
+            alt="DALL-E Generated Image"
+          />
+        </div>
+      );
+    }
+    return null;
   };
-
-    // Function to render the DALL-E image
-    const renderDALLEImage = () => {
-      if (openaiResponse && openaiResponse.imageURL) {
-        return (
-          <div className="bill-details__section bill-details__section--half bill-details__section--image">
-            <img className="bill-details__dalle-image" src={openaiResponse.imageURL} alt="DALL-E Generated Image" />
-          </div>
-        );
-      }
-      return null;
-    };
 
   // Render the bill details
   return (
@@ -94,7 +57,9 @@ const BillDetail = ({ openaiResponse }) => {
             <h4 className="bill-details__section-heading">Introduced</h4>{" "}
             <p>{formatDate(introduced)}</p>
           </section>
+
           {renderDALLEImage()} {/* Render the DALL-E image */}
+          
           <section className="bill-details__section">
             <h3 className="bill-details__section-heading">Intent</h3>{" "}
             <p>{parsedOpenaiResponse.Intent}</p>
@@ -111,9 +76,9 @@ const BillDetail = ({ openaiResponse }) => {
             <h3 className="bill-details__section-heading">Cons</h3>{" "}
             {renderList(parsedOpenaiResponse.Cons)}
           </section>
-          <section className="bill-details__section">
+          <section className="bill-details__section bill-details__section--progress">
             <h3 className="bill-details__section-heading">Progress:</h3>{" "}
-            {renderMajorStages(parsedOpenaiResponse.Progress)}
+            <ProgressBar progress={parsedOpenaiResponse.Progress} />
           </section>
         </div>
       ) : (
