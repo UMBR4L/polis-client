@@ -2,6 +2,8 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import BillDetail from "../../components/BillDetails/BillDetails.js"; // Import your BillDetail component
+import legislativeProcessImage from "../../assets/images/legislative-process.svg";
+import "./BillDetailsPage.scss";
 
 const BillDetailsPage = (selectedBill) => {
   const { billId, session } = useParams();
@@ -14,8 +16,10 @@ const BillDetailsPage = (selectedBill) => {
     const fetchBillDetails = async (billId, session) => {
       try {
         // Check if the response is already cached in localStorage
-        const cachedResponse = localStorage.getItem(`bill_${billId}_${session}`);
-        
+        const cachedResponse = localStorage.getItem(
+          `bill_${billId}_${session}`
+        );
+
         if (cachedResponse) {
           // If cached response exists, use it and avoid making a new API call
           setOpenaiResponse(JSON.parse(cachedResponse));
@@ -30,7 +34,10 @@ const BillDetailsPage = (selectedBill) => {
           setLoading(false);
 
           // Cache the API response in localStorage
-          localStorage.setItem(`bill_${billId}_${session}`, JSON.stringify(response.data));
+          localStorage.setItem(
+            `bill_${billId}_${session}`,
+            JSON.stringify(response.data)
+          );
         }
       } catch (error) {
         console.error("Error fetching bill details:", error);
@@ -45,7 +52,14 @@ const BillDetailsPage = (selectedBill) => {
   return (
     <div className="bill-details-page">
       {loading ? (
-        <p>Loading...</p>
+        <div className="loading-screen">
+          <p className="loading-screen__text">Loading...</p>
+          <img
+            className="loading-screen__image"
+            src={legislativeProcessImage}
+            alt="Legislative process loading screen"
+          />
+        </div>
       ) : (
         <BillDetail openaiResponse={openaiResponse} />
       )}
