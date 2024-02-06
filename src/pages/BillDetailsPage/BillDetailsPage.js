@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import BillDetail from "../../components/BillDetails/BillDetails.js"; // Import your BillDetail component
-import legislativeProcessImage from "../../assets/images/legislative-process.svg";
+import legislativeProcessImage from "../../assets/images/legislative-process.png";
 import "./BillDetailsPage.scss";
 
 const BillDetailsPage = (selectedBill) => {

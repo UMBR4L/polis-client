@@ -1,0 +1,29 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typograghy" as *;
+
+.progress {
+  display: flex;
+  width: 100%;
+  gap: $spacing-unit;
+
+  &__text {
+    li {
+      margin-left: -$spacing-unit;
+    }
+    &--not-found {
+      padding-left: $spacing-unit;
+      line-height: $line-height-h3;
+    }
+  }
+
+  &__bar {
+    border: 1px solid $accent-color;
+    background-color: $background-color;
+    width: 100%;
+  }
+  &__current-progress {
+    height: 1rem;
+    background-color: $secondary-color;
+  }
+}
