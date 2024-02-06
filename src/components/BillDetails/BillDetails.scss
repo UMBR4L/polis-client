@@ -14,9 +14,9 @@
   .bill-details__section {
     padding: 0.5rem;
     background-color: $primary-color;
-    border: 0.3rem solid $background-color;
+    border: 0.3rem solid $secondary-color;
     border-bottom: none;
-    width: calc(100% - $spacing-unit);
+    width: calc(100%);
 
     &-heading {
       color: $text-color;
@@ -25,7 +25,7 @@
 
     &--half {
       width: calc(50%);
-      border-right: none;
+      // border-right: none;
     }
 
     &--image {
@@ -60,8 +60,11 @@
     list-style-type: "\1F4A1";
   }
 
-  .bill-details__pros ul {
-    list-style-type: "\1F44D";
+  .bill-details__pros {
+    border-right: none;
+    ul {
+      list-style-type: "\1F44D";
+    }
   }
 
   .bill-details__cons ul {
