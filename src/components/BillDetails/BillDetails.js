@@ -32,7 +32,7 @@ const BillDetail = ({ openaiResponse }) => {
           <img
             className="bill-details__dalle-image"
             src={openaiResponse.imageURL}
-            alt="DALL-E Generated Image"
+            alt="DALL-E Generated Representation of Bill's Themes"
           />
         </div>
       );

@@ -23,7 +23,7 @@ function BillsListPage({ billsData }) {
   }, [filterName]);
 
   return (
-    <div className="billsList__container">
+    <div className="bills-list-page">
       <BillsList bills={bills} />
     </div>
   );
