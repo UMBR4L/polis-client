@@ -8,7 +8,7 @@ const BillDetail = ({ openaiResponse }) => {
   const location = useLocation();
   const introduced = new URLSearchParams(location.search).get("introduced");
 
-  const parsedOpenaiResponse = JSON.parse(openaiResponse);
+  const parsedOpenaiResponse = JSON.parse(openaiResponse.cleanedJson);
 
   // Function to render a list of items from an array
   const renderList = (items) => {
@@ -65,6 +65,18 @@ const BillDetail = ({ openaiResponse }) => {
     );
   };
 
+    // Function to render the DALL-E image
+    const renderDALLEImage = () => {
+      if (openaiResponse && openaiResponse.imageURL) {
+        return (
+          <div className="bill-details__section bill-details__section--half bill-details__section--image">
+            <img className="bill-details__dalle-image" src={openaiResponse.imageURL} alt="DALL-E Generated Image" />
+          </div>
+        );
+      }
+      return null;
+    };
+
   // Render the bill details
   return (
     <div className="bill-details">
@@ -82,6 +94,7 @@ const BillDetail = ({ openaiResponse }) => {
             <h4 className="bill-details__section-heading">Introduced</h4>{" "}
             <p>{formatDate(introduced)}</p>
           </section>
+          {renderDALLEImage()} {/* Render the DALL-E image */}
           <section className="bill-details__section">
             <h3 className="bill-details__section-heading">Intent</h3>{" "}
             <p>{parsedOpenaiResponse.Intent}</p>

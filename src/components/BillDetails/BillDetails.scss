@@ -18,12 +18,16 @@
     border-bottom: none;
 
     &-heading {
-      font-size: 1.2rem;
       color: $text-color;
+      width: 100%;
     }
 
     &--half {
       width: calc(50%);
+    }
+
+    &--image {
+      padding: 0;
     }
 
     ul {
@@ -33,6 +37,11 @@
         padding-left: $spacing-unit;
       }
     }
+  }
+
+  &__dalle-image {
+    width: 100%;
+    height: auto;
   }
 
   /* Define specific list-style-type styles for different sections */
