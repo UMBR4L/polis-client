@@ -1,0 +1,15 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typograghy" as *;
+
+.loading-screen {
+  padding-top: $padding-small;
+  text-align: center;
+  // &__text {
+
+  // }
+
+  &__image {
+    width: 95%;
+  }
+}

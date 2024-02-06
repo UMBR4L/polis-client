@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import PolisLogo from "../../assets/logo/logo2.png";
+import PolisLogo from "../../assets/images/logo2.png";
 import "./Header.scss";
 
 export default function Header() {
