@@ -5,6 +5,7 @@ import BillsList from "../../components/BillsList/BillsList.js";
 import "./BillsListPage.scss";
 import Header from "../../components/Header/Header.js";
 import { fetchBillsWithFilter } from "../../utils/api.js";
+import "./BillsListPage.scss";
 
 function BillsListPage({ billsData }) {
   const [bills, setBills] = useState([]);
@@ -23,7 +24,7 @@ function BillsListPage({ billsData }) {
 
   return (
     <div className="bills-list-page">
-      <Header pageHeading={`POLIS`}/>
+      <Header className="bill-list__header" pageHeading={`POLIS`}/>
       <BillsList bills={bills} />
     </div>
   );

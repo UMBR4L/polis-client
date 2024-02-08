@@ -20,8 +20,19 @@
     border: 0.1rem solid $secondary-color;
     border-radius: $border-radius;
 
+    @include desktop {
+      width: 50%;
+    }
+
+    &-heading {
+      width: 100%;
+    }
+
     &--half {
       width: calc(50% - $spacing-unit);
+      @include desktop {
+        width: 50%;
+      }
     }
 
     &--image {
@@ -43,17 +54,38 @@
       h3 {
         width: auto;
       }
+      @include desktop {
+        width: 100%;
+      }
     }
+  }
+
+  &__intro-container {
+    display: flex;
+    gap: $spacing-unit;
   }
 
   &__dalle-image {
     width: 100%;
     border-radius: $border-radius;
+    @include desktop {
+      // width: 50%
+    }
+  }
+
+  &__pros-cons-container {
+    display: flex;
+    gap: $spacing-unit;
   }
 
   /* Define specific list-style-type styles for different sections */
-  .bill-details__changes ul {
-    list-style-type: "\1F4A1";
+  .bill-details__changes {
+    @include desktop {
+      width: 100%;
+    }
+    ul {
+      list-style-type: "\1F4A1";
+    }
   }
 
   .bill-details__pros {

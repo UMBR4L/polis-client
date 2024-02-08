@@ -48,36 +48,46 @@ const BillDetail = ({ openaiResponse }) => {
     <div className="bill-details">
       {parsedOpenaiResponse ? (
         <div className="bill-details__container">
-          <Header pageHeading={`Bill ${ billId }`} />
+          <Header pageHeading={`Bill ${billId}`} />
           <div className="bill-details__section bill-details__section-heading">
             <h2 className="bill-details__heading">
               {parsedOpenaiResponse.Name}
             </h2>
           </div>
-          <section className="bill-details__section bill-details__section--half">
-            {/* <h3>Bill ID: {billId}</h3> */}
-            <h4 className="bill-details__section-heading">Session ID</h4>{" "}
-            <p>{session}</p>
-            <h4 className="bill-details__section-heading">Introduced</h4>{" "}
-            <p>{formatDate(introduced)}</p>
-          </section>
-          {renderDALLEImage()} {/* Render the DALL-E image */}
-          <section className="bill-details__section">
-            <h3 className="bill-details__section-heading">Intent</h3>{" "}
-            <p>{parsedOpenaiResponse.Intent}</p>
-          </section>
+          <div className="bill-details__intro-container">
+
+              <section className="bill-details__section bill-details__section--half">
+                {/* <h3>Bill ID: {billId}</h3> */}
+                <h4 className="bill-details__section-heading">
+                  Session ID
+                </h4>{" "}
+                <p>{session}</p>
+                <h4 className="bill-details__section-heading">
+                  Introduced
+                </h4>{" "}
+                <p>{formatDate(introduced)}</p>
+              </section>
+              <section className="bill-details__section">
+                <h3 className="bill-details__section-heading">Intent</h3>{" "}
+                <p>{parsedOpenaiResponse.Intent}</p>
+              </section>
+
+            {renderDALLEImage()} {/* Render the DALL-E image */}
           <section className="bill-details__section bill-details__changes">
             <h3 className="bill-details__section-heading">Proposed Changes</h3>
             {renderList(parsedOpenaiResponse.Changes)}
           </section>
-          <section className="bill-details__section bill-details__section--half bill-details__pros">
-            <h3 className="bill-details__section-heading">Pros</h3>
-            {renderList(parsedOpenaiResponse.Pros)}
-          </section>
-          <section className="bill-details__section bill-details__section--half bill-details__cons">
-            <h3 className="bill-details__section-heading">Cons</h3>{" "}
-            {renderList(parsedOpenaiResponse.Cons)}
-          </section>
+          </div>
+          <div className="bill-details__pros-cons-container">
+            <section className="bill-details__section bill-details__section--half bill-details__pros">
+              <h3 className="bill-details__section-heading">Pros</h3>
+              {renderList(parsedOpenaiResponse.Pros)}
+            </section>
+            <section className="bill-details__section bill-details__section--half bill-details__cons">
+              <h3 className="bill-details__section-heading">Cons</h3>{" "}
+              {renderList(parsedOpenaiResponse.Cons)}
+            </section>
+          </div>
           <section className="bill-details__section bill-details__section--progress">
             <h3 className="bill-details__section-heading">Progress:</h3>{" "}
             <ProgressBar progress={parsedOpenaiResponse.Progress} />

@@ -7,6 +7,11 @@
   background-color: #20162a;
   margin-top: -0.5rem;
   margin-left: -0.5rem;
+  @include desktop {
+    max-height: 10vw;
+    width: calc(100% + 2 * $spacing-unit);
+    margin-right: -$spacing-unit;
+  }
 
   &__logo {
     width: 20%;
@@ -16,6 +21,10 @@
     //   transform: translateY(-3px) translateX(-2px); /* Move the bill up slightly on hover */
     //   box-shadow: 2px 2px 4px $accent-color; /* Increase shadow on hover */
     // }
+    @include desktop {
+      max-height: 10vw;
+      width: auto;
+    }
   }
 
   &__text {
@@ -29,4 +38,10 @@
   flex-direction: row;
   width: 100%;
   justify-content: center;
+  
+}
+
+.qr-code {
+position: absolute;
+left: 0;
 }
