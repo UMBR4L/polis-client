@@ -3,15 +3,15 @@
 @use "../../styles/partials/typograghy" as *;
 
 .bill {
-  width: calc(50% ); /* Set the width of each bill to 50% */
+  width: calc(50% - $margin-large); /* Set the width of each bill to 50% */
   background-color: white; /* Add background color or other styles as needed */
   padding: $spacing-unit; /* Adjust the padding within each bill square */
   border: 1px solid #ddd;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  box-shadow: 0 4px 8px $primary-color;
+  // border-radius: 8px;
   // border: 0.4rem solid $background-color; /* Add a border or other styling as needed */
-  // border-radius: 1rem;
-  //   box-shadow: 3px 3px 5px $accent-color; /* Soft shadow */
+  border-radius: 1rem;
+    // box-shadow: 3px 3px 5px $accent-color; /* Soft shadow */
   transition: transform 0.2s ease-in-out; /* Add a subtle hover effect */
 
   &:hover {
@@ -22,8 +22,7 @@
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap to the next row */
     padding-top: $padding-small;
-    gap: $spacing-unit; /* Adjust the gap between bills */
-    justify-content: space-between; /* Align items to the start of the row */
+    gap: $spacing-unit; /* Adjust the gap between bills */ /* Align items to the start of the row */
   }
 
   // possible animations

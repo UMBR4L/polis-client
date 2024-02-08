@@ -11,20 +11,12 @@ import billsData from "./assets/data/bills-list.json";
 function App() {
   return (
     <BrowserRouter>
-      <div className="background">
-        {/* <div className="background__header"></div> */}
-        <Header />
-        <Routes>
-          <Route
-            path="/"
-            element={<BillsListPage bills={billsData}/>}   
-          />
-          <Route
-            path="/bill/:billId/:session"
-            element={<BillDetailsPage />}
-          />
-        </Routes>
-      </div>
+
+      <Header />
+      <Routes>
+        <Route path="/" element={<BillsListPage bills={billsData} />} />
+        <Route path="/bill/:billId/:session" element={<BillDetailsPage />} />
+      </Routes>
     </BrowserRouter>
   );
 }

@@ -1,17 +1,48 @@
 @use "./variables" as *;
 
-// Define font-face
 @font-face {
-  font-family: "DMSerifText-Regular";
-  src: url("../../assets/fonts/DMSerifText-Regular.ttf") format(ttf);
-  font-weight: 400; // Adjust to your desired font weight
+	font-family: "futura-pt";
+	src: url(../../assets/fonts/FuturaPTLight.otf) format(opentype);
+	font-weight: 400;
+}
+@font-face {
+	font-family: "futura-pt";
+	src: url(../../assets/fonts/FuturaPTBook.otf) format(opentype);
+	font-weight: 450;
 }
 
 @font-face {
-    font-family: "DMSerifText-Italic";
-    src: url("../../assets/fonts/DMSerifText-Italic.ttf") format(ttf);
-    font-weight: 400; // Adjust to your desired font weight
-  }
+	font-family: "futura-pt";
+	src: url(../../assets/fonts/FuturaPTDemi.otf) format(opentype);
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "futura-pt";
+	src: url(../../assets/fonts/FuturaPTMedium.otf) format(opentype);
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "futura-pt";
+	src: url(../../assets/fonts/FuturaPTHeavy.otf) format(opentype);
+	font-weight: 650;
+}
+
+@font-face {
+	font-family: "tiempos-headline";
+	src: url(../../assets/fonts/TiemposHeadline-Regular.otf) format(opentype);
+	font-weight: 400;
+	font-style: regular;
+}
+
+@font-face {
+	font-family: "caslon-graphique";
+	src: url(../../assets/fonts/CaslonGraphique-Opti.otf) format(opentype);
+	font-weight: 400;
+	font-style: regular;
+}
+
 
 // Define font-family variables
 $font-family-regular: "DMSerifText-Regular";
@@ -21,18 +52,18 @@ $font-family-italic: "DMSerifText-Italic";
 
 // Font sizes
 $font-size-base: 12px; // Base font size
-$font-size-h1: 1.5rem; // Heading 1
-$font-size-h2: 1.25rem; // Heading 2
-$font-size-h3: 1.125rem; // Heading 3
-$font-size-h4: 1rem; // Heading 4
+$font-size-h1: 2rem; // Heading 1
+$font-size-h2: 1.5rem; // Heading 2
+$font-size-h3: 1.25rem; // Heading 3
+$font-size-h4: 1.125rem; // Heading 4
 $font-size-h5: 1rem; // Heading 5
 $font-size-p: 0.9rem; // Paragraph
 
 // Line heights
 $line-height-h1: 1.3; // Heading 1
 $line-height-h2: 1.3; // Heading 2
-$line-height-h3: 1.5; // Heading 3
-$line-height-h4: 1.5; // Heading 4
+$line-height-h3: 1.3; // Heading 3
+$line-height-h4: 1.3; // Heading 4
 $line-height-h5: 1.3; // Heading 5
 $line-height-p: 1.3; // Paragraph
 
@@ -114,4 +145,5 @@ p {
   font-size: $font-size-p;
   line-height: $line-height-p;
   font-weight: $font-weight-p;
+  color: $subtext-color;
 }

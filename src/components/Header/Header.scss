@@ -3,9 +3,10 @@
 .header {
     // position: absolute;
     z-index: 1;
-    padding-right: $spacing-unit;
+    // padding-right: $spacing-unit;
     background-color: $accent-color;
     margin-top: -$spacing-unit;
+    margin-left: -$spacing-unit;
     width: 100vw;
 
     &__logo {
