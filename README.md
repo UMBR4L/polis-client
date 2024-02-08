@@ -4,6 +4,21 @@
 
 Polis is a user-friendly web application designed to empower Canadian citizens by providing clear and concise information about bills currently in the Canadian Parliament. It aims to bridge the gap between complex legislative activities and the average citizen's understanding.
 
+## Installation
+
+1. Clone the repo:
+  git clone git@github.com:UMBR4L/polis-client.git
+
+2. Navigate to the Polis client
+  cd polis-client
+
+3. Install Dependencies
+  npm install
+
+4. Start the Development Server and Access Polis
+  npm start
+  navigate to 'http://localhost:3000' (or the port specified by the development server) to access Polis.
+
 ### Problem
 
 Many Canadian citizens feel disconnected from their government's legislative activities due to the complexity of bills and the language used in official sources. Polis addresses this problem by simplifying bill information, making it accessible to a wider audience.
@@ -52,7 +67,7 @@ User Needs: Users seek easily digestible information about bills to stay informe
 
 ### Mockups
 
-![mockup](./public/polis__mockup-2.jpg)
+![mockup](./public/images/polis__mockup-2.jpg)
 
 ### Data
 
