@@ -12,8 +12,6 @@ function App() {
   return (
     <BrowserRouter>
       <div className="background">
-        {/* <div className="background__header"></div> */}
-        <Header />
         <Routes>
           <Route
             path="/"

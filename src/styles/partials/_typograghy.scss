@@ -1,93 +1,87 @@
 @use "./variables" as *;
+@use "./mixins" as * ;
 
 // Define font-face
 @font-face {
+  font-family: "ProtestGuerrilla";
+  src: url("../../assets/fonts/ProtestGuerrilla-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
   font-family: "ProtestRiot";
-  src: url("../../assets/fonts/ProtestRiot-Regular.ttf") format(ttf);
+  src: url("../../assets/fonts/ProtestRiot-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "ProtestStrike";
-  src: url("../../assets/fonts/TitilliumWeb-Regular.woff2") format(ttf);
-  font-weight: 400;
-  font-style: normal;
+  src: url("../../assets/fonts/ProtestStrike-Regular.ttf") format("truetype");
+  font-weight: 300;
   font-display: fallback;
 }
 
 @font-face {
   font-family: "ProtestRevolution";
-  src: url("../../assets/fonts/ProtestRevolution-Regular.ttf") format(ttf);
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "ProtestGuerrilla";
-  src: url("../../assets/fonts/ProtestGuerrilla-Regular.ttf") format(ttf);
+  src: url("../../assets/fonts/ProtestRevolution-Regular.ttf")
+    format("truetype");
   font-weight: 400;
 }
 
 // Define font-family variables
-$font-family-1: "ProtestRiot";
-$font-family-2: "ProtestStrike";
-$font-family-3: "ProtestRevolution";
-$font-family-4: "ProtestGuerrilla";
+$font-family-title: "ProtestGuerrilla";
+$font-family-normal: "ProtestRiot";
+$font-family-bold: "ProtestStrike";
+$font-family-italic: "ProtestRevolution";
 
 // Typography variables
 
 // Font sizes
 $font-size-base: 8px; // Base font size
-$font-size-h1: 1.5rem; // Heading 1
-$font-size-h2: 1.25rem; // Heading 2
-$font-size-h3: 1.125rem; // Heading 3
-$font-size-h4: 1rem; // Heading 4
+$font-size-h1: 3rem; // Heading 1
+$font-size-h2: 2rem; // Heading 2
+$font-size-h3: 1.25rem; // Heading 3
+$font-size-h4: 1.125rem; // Heading 4
 $font-size-h5: 1rem; // Heading 5
-$font-size-p: 0.9rem; // Paragraph
+$font-size-p: 1rem; // Paragraph
 
 // Line heights
-$line-height-h1: 1.3; // Heading 1
+$line-height-h1: 1.4; // Heading 1
 $line-height-h2: 1.3; // Heading 2
-$line-height-h3: 1.5; // Heading 3
-$line-height-h4: 1.5; // Heading 4
+$line-height-h3: 1.3; // Heading 3
+$line-height-h4: 1.3; // Heading 4
 $line-height-h5: 1.3; // Heading 5
 $line-height-p: 1.3; // Paragraph
 
 // Font weights
 $font-weight-h1: 1000; // Heading 1
-$font-weight-h2: 800; // Heading 2
-$font-weight-h3: 700; // Heading 3
+$font-weight-h2: 500; // Heading 2
+$font-weight-h3: 1; // Heading 3
 $font-weight-h4: 700; // Heading 4
 $font-weight-h5: 700; // Heading 5
-$font-weight-p: 400; // Paragraph
+$font-weight-p: 200; // Paragraph
 
 // Responsive Typography
 
-// // Tablet
-// @media screen and (min-width: 768px) {
-//   $font-size-h1: 2.5rem; // Increase heading 1 font size
-//   $font-size-h2: 2rem; // Increase heading 2 font size
-//   $font-size-h3: 1.75rem; // Increase heading 3 font size
+// Tablet
+$tablet-font-size-h1: 4rem; // Increase heading 1 font size
+$tablet-font-size-h2: 2.5rem; // Increase heading 2 font size
+$tablet-font-size-h3: 1.75rem; // Increase heading 3 font size
+$tablet-font-size-h4: 1.5rem; // Increase heading 3 font size
+$tablet-font-size-h5: 1.25rem; // Increase heading 3 font size
+$tablet-font-size-p: 1.1rem; // Increase heading 3 font size
 
-//   body {
-//     font-family: $font-family-regular; // Switch to the large font for larger screens
-//   }
-// }
-
-// // Desktop
-// @media screen and (min-width: 1024px) {
-//   $font-size-h1: 3rem; // Further increase heading 1 font size for desktop
-//   $font-size-h2: 2.5rem; // Further increase heading 2 font size for desktop
-//   $font-size-h3: 2rem; // Further increase heading 3 font size for desktop
-//   $font-size-h4: 1.5rem; // Increase heading 4 font size for desktop
-//   $font-size-h5: 1.25rem; // Increase heading 5 font size for desktop
-//   $font-size-p: 1.125rem; // Increase paragraph font size for desktop
-// }
+// Desktop
+$desktop-font-size-h1: 3rem; // Further increase heading 1 desktop-font size for desktop
+$desktop-font-size-h2: 2.5rem; // Further increase heading 2 desktop-font size for desktop
+$desktop-font-size-h3: 2rem; // Further increase heading 3 desktop-font size for desktop
+$desktop-font-size-h4: 1.5rem; // Increase heading 4 desktop-font size for desktop
+$desktop-font-size-h5: 1.25rem; // Increase heading 5 desktop-font size for desktop
+$desktop-font-size-p: 1.125rem; // Increase paragraph desktop-font size for desktop
 
 // Apply Typography Styles
 
 // Apply the font families
 body {
-  font-family: $font-family-2;
   font-size: $font-size-base;
 }
 
@@ -97,38 +91,61 @@ a {
 }
 
 h1 {
+  font-family: $font-family-title;
   font-size: $font-size-h1;
   line-height: $line-height-h1;
   font-weight: $font-weight-h1;
+  @include tablet {
+    font-size: $tablet-font-size-h1;
+  }
 }
 
 h2 {
+  font-family: $font-family-bold;
   font-size: $font-size-h2;
   line-height: $line-height-h2;
   font-weight: $font-weight-h2;
+  @include tablet {
+    font-size: $tablet-font-size-h2;
+  }
 }
 
 h3 {
-  font-family: $font-family-2;
+  font-family: $font-family-bold;
   font-size: $font-size-h3;
   line-height: $line-height-h3;
   font-weight: $font-weight-h3;
+  @include tablet {
+    font-size: $tablet-font-size-h3;
+  }
 }
 
 h4 {
+  font-family: $font-family-normal;
   font-size: $font-size-h4;
   line-height: $line-height-h4;
   font-weight: $font-weight-h4;
+  @include tablet {
+    font-size: $tablet-font-size-h4;
+  }
 }
 
 h5 {
+  font-family: $font-family-normal;
   font-size: $font-size-h5;
   line-height: $line-height-h5;
   font-weight: $font-weight-h5;
+  @include tablet {
+    font-size: $tablet-font-size-h5;
+  }
 }
 
 p {
+  font-family: $font-family-normal;
   font-size: $font-size-p;
   line-height: $line-height-p;
   font-weight: $font-weight-p;
+  @include tablet {
+    font-size: $tablet-font-size-p;
+  }
 }

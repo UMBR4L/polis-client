@@ -8,28 +8,25 @@
   &__container {
     display: flex;
     flex-wrap: wrap;
+    gap: $spacing-unit;
+    justify-content: center;
   }
 
   /* Define styles for different sections */
   .bill-details__section {
+    width: calc(100% - $spacing-unit);
     padding: 0.5rem;
     background-color: $primary-color;
-    border: 0.3rem solid $secondary-color;
-    border-bottom: none;
-    width: calc(100%);
-
-    &-heading {
-      color: $text-color;
-      width: 100%;
-    }
+    border: 0.1rem solid $secondary-color;
+    border-radius: $border-radius;
 
     &--half {
-      width: calc(50%);
-      // border-right: none;
+      width: calc(50% - $spacing-unit);
     }
 
     &--image {
       padding: 0;
+      border: none;
     }
 
     ul {
@@ -42,8 +39,7 @@
 
     &--progress {
       display: flex;
-      align-items: flex-end;
-      width: 100%;
+      align-items: baseline;
       h3 {
         width: auto;
       }
@@ -51,8 +47,8 @@
   }
 
   &__dalle-image {
-    width: calc(100%);
-    height: auto;
+    width: 100%;
+    border-radius: $border-radius;
   }
 
   /* Define specific list-style-type styles for different sections */
@@ -61,7 +57,6 @@
   }
 
   .bill-details__pros {
-    border-right: none;
     ul {
       list-style-type: "\1F44D";
     }

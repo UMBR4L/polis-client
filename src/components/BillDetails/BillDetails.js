@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams, useLocation } from "react-router-dom";
 import { formatDate } from "../../utils/dateUtils";
+import Header from "../Header/Header";
 import ProgressBar from "../ProgressBar/ProgressBar";
 import "./BillDetails.scss";
 
@@ -40,15 +41,18 @@ const BillDetail = ({ openaiResponse }) => {
     return null;
   };
 
+  console.log(billId);
+
   // Render the bill details
   return (
     <div className="bill-details">
       {parsedOpenaiResponse ? (
         <div className="bill-details__container">
+          <Header pageHeading={`Bill ${ billId }`} />
           <div className="bill-details__section bill-details__section-heading">
-            <h1 className="bill-details__heading">
+            <h2 className="bill-details__heading">
               {parsedOpenaiResponse.Name}
-            </h1>
+            </h2>
           </div>
           <section className="bill-details__section bill-details__section--half">
             {/* <h3>Bill ID: {billId}</h3> */}
@@ -57,9 +61,7 @@ const BillDetail = ({ openaiResponse }) => {
             <h4 className="bill-details__section-heading">Introduced</h4>{" "}
             <p>{formatDate(introduced)}</p>
           </section>
-
           {renderDALLEImage()} {/* Render the DALL-E image */}
-          
           <section className="bill-details__section">
             <h3 className="bill-details__section-heading">Intent</h3>{" "}
             <p>{parsedOpenaiResponse.Intent}</p>
