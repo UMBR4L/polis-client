@@ -19,12 +19,12 @@ export default function Header({ pageHeading }) {
           src={PolisLogo}
           alt="Polis Logo"
         ></img>
+          </Link>
 		<img
           className="logo header__logo qr-code"
           src={QRCode}
           alt="Contact Card QR Code"
         ></img>
-      </Link>
     </div>
   );
 }
