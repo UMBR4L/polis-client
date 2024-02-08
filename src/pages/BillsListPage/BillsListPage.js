@@ -17,7 +17,7 @@ function BillsListPage({ billsData }) {
         data.sort((a, b) => new Date(b.introduced) - new Date(a.introduced));
         setBills(data);
         // Clear the entire localStorage
-        localStorage.clear();
+        localStorage.clear(); // delete this when ready
       })
       .catch((error) => console.error(error));
   }, [filterName]);
