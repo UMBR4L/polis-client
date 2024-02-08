@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import BillDetail from "../../components/BillDetails/BillDetails.js"; // Import your BillDetail component
 import legislativeProcessImage from "../../assets/images/legislative-process.png";
+import Header from "../../components/Header/Header.js";
 import "./BillDetailsPage.scss";
 
 const BillDetailsPage = (selectedBill) => {
@@ -47,13 +48,16 @@ const BillDetailsPage = (selectedBill) => {
 
     // Call the function to fetch OpenAI data
     fetchBillDetails(billId, session);
-  }, [apiUrl, billId, session]);
+  }, []);
 
   return (
     <div className="bill-details-page">
       {loading ? (
         <div className="loading-screen">
-          <p className="loading-screen__text">Loading...</p>
+          <Header pageHeading={`Loading...`}/>
+          <div className="loading-screen__animation">
+            <div className="loading-screen__spinner"></div>
+          </div>
           <img
             className="loading-screen__image"
             src={legislativeProcessImage}

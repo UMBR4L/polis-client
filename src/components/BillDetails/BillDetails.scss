@@ -8,28 +8,36 @@
   &__container {
     display: flex;
     flex-wrap: wrap;
+    gap: $spacing-unit;
+    justify-content: center;
   }
 
   /* Define styles for different sections */
   .bill-details__section {
+    width: calc(100% - $spacing-unit);
     padding: 0.5rem;
     background-color: $primary-color;
-    border: 0.3rem solid $secondary-color;
-    border-bottom: none;
-    width: calc(100%);
+    border: 0.1rem solid $secondary-color;
+    border-radius: $border-radius;
+
+    @include desktop {
+      width: 50%;
+    }
 
     &-heading {
-      color: $text-color;
       width: 100%;
     }
 
     &--half {
-      width: calc(50%);
-      // border-right: none;
+      width: calc(50% - $spacing-unit);
+      @include desktop {
+        width: 50%;
+      }
     }
 
     &--image {
       padding: 0;
+      border: none;
     }
 
     ul {
@@ -42,26 +50,45 @@
 
     &--progress {
       display: flex;
-      align-items: flex-end;
-      width: 100%;
+      align-items: baseline;
       h3 {
         width: auto;
+      }
+      @include desktop {
+        width: 100%;
       }
     }
   }
 
+  &__intro-container {
+    display: flex;
+    gap: $spacing-unit;
+  }
+
   &__dalle-image {
-    width: calc(100%);
-    height: auto;
+    width: 100%;
+    border-radius: $border-radius;
+    @include desktop {
+      // width: 50%
+    }
+  }
+
+  &__pros-cons-container {
+    display: flex;
+    gap: $spacing-unit;
   }
 
   /* Define specific list-style-type styles for different sections */
-  .bill-details__changes ul {
-    list-style-type: "\1F4A1";
+  .bill-details__changes {
+    @include desktop {
+      width: 100%;
+    }
+    ul {
+      list-style-type: "\1F4A1";
+    }
   }
 
   .bill-details__pros {
-    border-right: none;
     ul {
       list-style-type: "\1F44D";
     }
