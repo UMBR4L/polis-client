@@ -2,25 +2,41 @@
 
 // Define font-face
 @font-face {
-  font-family: "DMSerifText-Regular";
-  src: url("../../assets/fonts/DMSerifText-Regular.ttf") format(ttf);
-  font-weight: 400; // Adjust to your desired font weight
+  font-family: "ProtestRiot";
+  src: url("../../assets/fonts/ProtestRiot-Regular.ttf") format(ttf);
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: "DMSerifText-Italic";
-    src: url("../../assets/fonts/DMSerifText-Italic.ttf") format(ttf);
-    font-weight: 400; // Adjust to your desired font weight
-  }
+  font-family: "ProtestStrike";
+  src: url("../../assets/fonts/TitilliumWeb-Regular.woff2") format(ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "ProtestRevolution";
+  src: url("../../assets/fonts/ProtestRevolution-Regular.ttf") format(ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "ProtestGuerrilla";
+  src: url("../../assets/fonts/ProtestGuerrilla-Regular.ttf") format(ttf);
+  font-weight: 400;
+}
 
 // Define font-family variables
-$font-family-regular: "DMSerifText-Regular";
-$font-family-italic: "DMSerifText-Italic";
+$font-family-1: "ProtestRiot";
+$font-family-2: "ProtestStrike";
+$font-family-3: "ProtestRevolution";
+$font-family-4: "ProtestGuerrilla";
 
 // Typography variables
 
 // Font sizes
-$font-size-base: 12px; // Base font size
+$font-size-base: 8px; // Base font size
 $font-size-h1: 1.5rem; // Heading 1
 $font-size-h2: 1.25rem; // Heading 2
 $font-size-h3: 1.125rem; // Heading 3
@@ -71,7 +87,7 @@ $font-weight-p: 400; // Paragraph
 
 // Apply the font families
 body {
-  font-family: $font-family-regular; // Use the small font by default
+  font-family: $font-family-2;
   font-size: $font-size-base;
 }
 
@@ -93,6 +109,7 @@ h2 {
 }
 
 h3 {
+  font-family: $font-family-2;
   font-size: $font-size-h3;
   line-height: $line-height-h3;
   font-weight: $font-weight-h3;
